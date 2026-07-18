@@ -197,9 +197,11 @@ header.site-header {
   .nav-links { position: fixed; top: 68px; left: 0; right: 0; background: var(--bg);
     flex-direction: column; align-items: flex-start; gap: 0; border-bottom: 1px solid var(--border);
     max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
-  .nav-links.open { max-height: 320px; }
+  .nav-links.open { max-height: 380px; }
   .nav-links a { width: 100%; padding: 16px 28px; border-top: 1px solid var(--border); }
   .nav-cta .btn-ghost { display: none; }
+  .nav-cta .btn-primary { display: none; }
+  .nav-cta .login-link { display: none; }
   .nav-toggle { display: flex; }
 }
 
