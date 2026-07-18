@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commencer — Domegarde</title>
+<meta name="description" content="Parlez-nous de votre patrimoine et nous vous orienterons vers la bonne formule Domegarde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index-fr.html" class="brand">
+      <img src="/assets/logo-icon.png" alt="Domegarde" class="logo-icon">
+      Domegarde
+    </a>
+    <nav class="nav-links">
+      <a href="index-fr.html">Accueil</a>
+      <a href="about-fr.html">À propos</a>
+      <a href="pricing-fr.html">Tarifs</a>
+      <a href="get-started-fr.html" class="active">Commencer</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="pricing-fr.html" class="btn btn-ghost">Voir les tarifs</a>
+      <a href="get-started-fr.html" class="btn btn-primary">Commencer</a>
+      <a href="get-started.html" class="lang-switch">EN</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 20px;">
+    <div class="wrap two-col">
+      <div class="reveal">
+        <div class="eyebrow">Commencer</div>
+        <h1 style="font-size: clamp(2.3rem, 4.4vw, 3.6rem);">Organisons correctement votre patrimoine.</h1>
+        <p class="hero-sub" style="margin-top: 18px;">Parlez-nous un peu de ce que vous gérez et nous reviendrons vers vous avec la bonne formule et les prochaines étapes — généralement sous un jour ouvré.</p>
+        <div class="stage-list" style="margin-top: 40px; border-top: none;">
+          <div style="display:flex; gap:14px; margin-bottom:20px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+            <p style="color: var(--ink);">Aucun engagement à soumettre une demande — nous échangerons d'abord sur l'adéquation.</p>
+          </div>
+          <div style="display:flex; gap:14px; margin-bottom:20px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+            <p style="color: var(--ink);">Fonctionne pour un seul appartement comme pour un patrimoine multi-biens.</p>
+          </div>
+          <div style="display:flex; gap:14px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+            <p style="color: var(--ink);">Vous ne savez pas quelle formule choisir ? Laissez vide — nous vous aiderons à le déterminer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="get-started-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="g-name-fr">Nom complet</label>
+              <input type="text" id="g-name-fr" name="name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="g-email-fr">E-mail</label>
+              <input type="email" id="g-email-fr" name="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="g-phone-fr">Téléphone <span style="font-weight:400; color:var(--ink-soft);">(facultatif)</span></label>
+              <input type="tel" id="g-phone-fr" name="phone" autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label for="g-properties-fr">Nombre de biens</label>
+              <input type="number" id="g-properties-fr" name="number_of_properties" min="1" step="1" placeholder="ex. 3">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="g-plan-fr">Formule qui vous intéresse</label>
+            <select id="g-plan-fr" name="plan_interest">
+              <option value="">Pas encore sûr</option>
+              <option value="Steward">Steward — jusqu'à 3 biens</option>
+              <option value="Sentinel">Sentinel — jusqu'à 10 biens</option>
+              <option value="Sovereign">Sovereign — illimité</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="g-language-fr">Langue de contact préférée</label>
+            <select id="g-language-fr" name="preferred_language">
+              <option value="French">Français</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="g-message-fr">Autre chose à nous dire ?</label>
+            <textarea id="g-message-fr" name="message" placeholder="Détails du patrimoine, calendrier, questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer la demande</button>
+          <p id="get-started-status" class="form-status"></p>
+          <p class="form-note">En soumettant, vous acceptez d'être contacté au sujet de Domegarde. Jamais de spam.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="/assets/logo-icon.png" alt="Domegarde" class="logo-icon">
+          Domegarde
+        </div>
+        <p>Gardien IA agentique de patrimoine pour les propriétaires bailleurs indépendants en France. Conçu à Paris.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <a href="index-fr.html">Accueil</a>
+        <a href="pricing-fr.html">Tarifs</a>
+        <a href="get-started-fr.html">Commencer</a>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <a href="about-fr.html">À propos</a>
+        <a href="about-fr.html#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Mentions légales</h4>
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Domegarde. Paris, France.</span>
+      <span>Conçu pour les propriétaires qui préfèrent ne plus penser aux tableurs.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+</body>
+</html>

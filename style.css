@@ -169,6 +169,12 @@ header.site-header {
   background: var(--gold);
 }
 .nav-cta { display: flex; align-items: center; gap: 14px; }
+.lang-switch {
+  font-size: 0.82rem; font-weight: 600; color: var(--ink-soft);
+  border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.lang-switch:hover { border-color: var(--ink); color: var(--ink); }
 .nav-toggle {
   display: none;
   background: none; border: none; cursor: pointer;

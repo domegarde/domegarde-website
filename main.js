@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     name: fd.get('name'),
     email: fd.get('email'),
     phone: fd.get('phone') || null,
+    preferred_language: fd.get('preferred_language') || null,
     message: fd.get('message') || null
   }));
 
@@ -96,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     phone: fd.get('phone') || null,
     number_of_properties: fd.get('number_of_properties') ? parseInt(fd.get('number_of_properties'), 10) : null,
     plan_interest: fd.get('plan_interest') || null,
+    preferred_language: fd.get('preferred_language') || null,
     message: fd.get('message') || null
   }));
 });
