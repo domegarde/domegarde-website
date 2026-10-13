@@ -484,3 +484,42 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 /* Legal pages: anchored headings clear the sticky header; wide tables scroll on phones instead of widening the page. */
 .legal-wrap h2[id] { scroll-margin-top: 110px; }
 @media (max-width: 640px) { .legal-wrap table { display: block; overflow-x: auto; } }
+
+
+/* -------------------- Batch 2 additions (home page copy, header, FAQ) -------------------- */
+
+/* Header: Get started and Log in live in the menu only on phones; on desktop they are the two buttons on the right. */
+.nav-links a { white-space: nowrap; }
+.nav-links .nav-mobile { display: none; }
+@media (max-width: 860px) { .nav-links .nav-mobile { display: block; } }
+
+/* Hero: the AI line is supporting, not the headline. */
+.hero-sub + .hero-ai { margin-top: -18px; }
+.hero-ai { font-size: 0.95rem; color: var(--ink-soft); max-width: 46ch; margin-bottom: 30px; line-height: 1.55; }
+.hero-ai .badge-dev { margin: 0 8px 0 0; }
+
+/* Two-column sections (About contact, Get started): let columns shrink so nothing pushes a 320px phone sideways. */
+.two-col > * { min-width: 0; }
+
+/* Seven differentiators: four on the first row, three on the second. */
+.feature-grid.seven { grid-template-columns: repeat(12, 1fr); }
+.feature-grid.seven .feature-card { grid-column: span 4; }
+.feature-grid.seven .feature-card:nth-child(-n+4) { grid-column: span 3; }
+@media (max-width: 900px) {
+  .feature-grid.seven .feature-card, .feature-grid.seven .feature-card:nth-child(-n+4) { grid-column: span 6; }
+  .feature-grid.seven .feature-card:last-child { grid-column: span 12; }
+}
+@media (max-width: 560px) {
+  .feature-grid.seven .feature-card, .feature-grid.seven .feature-card:nth-child(-n+4), .feature-grid.seven .feature-card:last-child { grid-column: span 12; }
+}
+
+/* FAQ */
+.faq { border-top: 1px solid var(--border); }
+.faq details { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--ink); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; color: var(--gold-deep); font-size: 1.5rem; line-height: 1; flex-shrink: 0; }
+.faq details[open] summary::after { content: '\2013'; }
+.faq details p { margin-top: 12px; max-width: 62ch; }
+.faq p a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; }

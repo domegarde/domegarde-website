@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Domegarde — Gardien Agentique IA de Patrimoine</title>
-<meta name="description" content="Domegarde est la plateforme d'administration immobilière pour les propriétaires bailleurs indépendants en France : suivi de conformité, gestion documentaire, et un gardien IA agentique qui veille sur votre patrimoine.">
+<title>Domegarde — Louez en règle, sans y penser</title>
+<meta name="description" content="Domegarde aide les propriétaires bailleurs indépendants en France à louer en règle : 44 obligations légales déterminées à partir de quelques questions, classées par conséquence, validées seulement quand la preuve existe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,12 +25,11 @@
       <a href="index-fr.html" class="active">Accueil</a>
       <a href="about-fr.html">À propos</a>
       <a href="pricing-fr.html">Tarifs</a>
-      <a href="get-started-fr.html">Commencer</a>
-      <a href="https://domegarde-app.vercel.app/login">Se connecter</a>
+      <a href="get-started-fr.html" class="nav-mobile">Commencer</a>
+      <a href="https://domegarde-app.vercel.app/login" class="nav-mobile">Se connecter</a>
     </nav>
     <div class="nav-cta">
       <a href="https://domegarde-app.vercel.app/login" class="login-link">Se connecter</a>
-      <a href="pricing-fr.html" class="btn btn-ghost">Voir les tarifs</a>
       <a href="get-started-fr.html" class="btn btn-primary">Commencer</a>
       <a href="index.html" class="lang-switch">EN</a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
@@ -42,18 +41,18 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">L'administration immobilière, faite comme il faut</div>
+        <div class="eyebrow">Pour les propriétaires bailleurs indépendants en France</div>
         <h1>
-          <span class="stage">Votre bien.</span>
-          <span class="stage">Protégé. Géré.</span>
-          <span class="stage gold">Maîtrisé.</span>
+          <span class="stage">Louez en règle,</span>
+          <span class="stage gold">sans y penser.</span>
         </h1>
-        <p class="hero-sub">Domegarde apporte un suivi structuré de la conformité, une gestion documentaire et un gardien IA agentique aux propriétaires bailleurs indépendants en France — pour que rien ne passe entre les mailles des tableurs, des e-mails et de la mémoire.</p>
+        <p class="hero-sub">Domegarde détermine lesquelles des 44 obligations légales s'appliquent à votre logement, les classe par conséquence, et ne passe un point au vert que lorsque le document ou la preuve datée existe.</p>
+        <p class="hero-ai"><span class="badge-dev">En développement</span>À venir : un gardien IA qui prépare les prochaines étapes pour que vous les relisiez et les approuviez.</p>
         <div class="hero-actions">
           <a href="get-started-fr.html" class="btn btn-primary btn-lg">Commencer</a>
-          <a href="pricing-fr.html" class="btn btn-ghost btn-lg">Voir les formules</a>
+          <a href="pricing-fr.html" class="btn btn-ghost btn-lg">Voir les tarifs</a>
         </div>
-        <p class="hero-note">Pas d'essai gratuit trompeur. Trois formules claires, d'un seul bien à un patrimoine illimité.</p>
+        <p class="hero-note">Trois formules claires, d'un seul bien à un patrimoine illimité.</p>
       </div>
       <div class="hero-visual reveal">
         <div>
@@ -71,41 +70,120 @@
   </section>
 
   <section>
+    <div class="wrap" style="max-width: 800px;">
+      <div class="section-head reveal">
+        <div class="eyebrow">Trois étapes</div>
+        <h2>Savoir où vous en êtes, étape par étape.</h2>
+      </div>
+      <div class="stage-list reveal">
+        <div class="stage-item">
+          <div class="num">01</div>
+          <div>
+            <h3>Répondez à une dizaine de questions</h3>
+            <p>L'année de construction, l'adresse, le type de bail. Domegarde ne demande que ce qui change les règles qui s'appliquent à vous.</p>
+          </div>
+        </div>
+        <div class="stage-item">
+          <div class="num">02</div>
+          <div>
+            <h3>Voyez ce qui s'applique, classé</h3>
+            <p>Vos obligations s'affichent par ordre de conséquence : ce qui vous empêche de louer d'abord, puis ce qui coûte de l'argent, puis ce qui vous fragilise en cas de litige.</p>
+          </div>
+        </div>
+        <div class="stage-item">
+          <div class="num">03</div>
+          <div>
+            <h3>Ajoutez vos documents et regardez les points passer au vert</h3>
+            <p>Un point passe au vert quand le document ou la preuve datée existe. Jamais avant, et jamais coché à la main.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Ce que contient Domegarde</div>
-        <h2>Tout ce dont l'administration d'un propriétaire a réellement besoin</h2>
+        <div class="eyebrow">Ce qui fait la différence</div>
+        <h2>Pensé autour de la preuve, pas des cases cochées.</h2>
       </div>
-      <div class="feature-grid">
+      <div class="feature-grid seven">
         <div class="feature-card reveal">
           <div class="icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
           </div>
-          <h3>Suivi de conformité</h3>
-          <p>DPE, assurances, diagnostics de sécurité — suivis automatiquement, avec des alertes avant toute échéance.</p>
+          <h3>44 obligations, à partir d'une dizaine de questions</h3>
+          <p>Quelques questions (l'âge du bien, l'adresse, le type de bail) suffisent à déterminer lesquelles des 44 obligations légales s'appliquent à votre logement. Chacune cite le texte dont elle découle.</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6a2 2 0 012-2h4l2 2h6a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3zM9 12l2 2 4-4"/></svg>
           </div>
-          <h3>Coffre-fort documentaire</h3>
-          <p>Chaque bail, certificat, état des lieux et reçu au même endroit, consultable — plus dispersés dans les e-mails.</p>
+          <h3>Jamais coché à la main</h3>
+          <p>Un point ne passe au vert que lorsque le document ou la preuve datée existe. On ne se met pas en règle en cochant une case.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h10M4 18h5"/></svg>
+          </div>
+          <h3>Classées par conséquence</h3>
+          <p>Ce qui vous empêche de louer passe en premier, puis ce qui coûte de l'argent, puis ce qui vous fragilise en cas de litige.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20V3H6.5A2.5 2.5 0 004 5.5v14z"/></svg>
+          </div>
+          <h3>Expliquées en langage clair</h3>
+          <p>Pour chaque obligation : ce que c'est, pourquoi elle existe, ce qu'elle coûte, combien de temps cela prend, et ce qui se passe si vous l'ignorez.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>
+          </div>
+          <h3>Indexation annuelle de l'IRL, lettre prête à signer</h3>
+          <p>Le nouveau loyer calculé sur l'indice INSEE, calcul à l'appui, bloqué lorsque la loi gèle le loyer, et la lettre de notification prête à signer.</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8M21 7v6M21 7h-6"/></svg>
           </div>
-          <h3>Registre financier</h3>
-          <p>Loyers, charges et frais ponctuels suivis bien par bien, toujours à jour, toujours exportables.</p>
+          <h3>Micro ou réel, sur vos propres chiffres</h3>
+          <p>Comparez le régime micro et le régime réel sur vos dépenses réelles, et préparez la régularisation annuelle des charges avec votre locataire.</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           </div>
-          <h3>Gardien IA agentique</h3>
-          <p>Une couche d'IA qui surveille votre patrimoine en continu et signale ce qui nécessite votre attention avant même que vous ne le demandiez.</p>
-          <span class="tier-note">Sentinel &amp; Sovereign</span><span class="badge-dev">En développement</span>
+          <h3>Un portail locataire, et des messages qu'on ne peut pas réécrire</h3>
+          <p>Votre locataire dispose de son propre espace. Le fil de messages partagé ne peut être ni modifié ni supprimé après coup, et vous pouvez l'imprimer comme historique.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width: 800px;">
+      <div class="section-head reveal">
+        <div class="eyebrow">Questions</div>
+        <h2>Des réponses claires.</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Est-ce un conseil juridique ?</summary>
+          <p>Non. Domegarde vous informe, vous rappelle vos échéances et prépare des documents. Elle ne remplace ni un avocat, ni un notaire, ni un expert-comptable, et vous restez responsable de vos décisions. Voir nos <a href="terms-fr.html">Conditions d'utilisation</a>.</p>
+        </details>
+        <details>
+          <summary>Qui envoie les courriers ?</summary>
+          <p>Vous. Domegarde prépare le courrier ; vous le relisez, l'approuvez, le signez et l'envoyez vous-même. Rien n'est signé ni envoyé à votre place.</p>
+        </details>
+        <details>
+          <summary>Où vont mes loyers ?</summary>
+          <p>Directement sur votre compte. Domegarde ne perçoit, ne détient ni ne transmet jamais de loyer ni de dépôt de garantie. Vous indiquez ce que vous avez reçu : cela permet de suivre les échéances et d'imprimer des relevés.</p>
+        </details>
+        <details>
+          <summary>Où sont hébergées mes données ?</summary>
+          <p>À Paris. Les données que vous saisissez dans l'application sont stockées dans la région de Paris de notre prestataire de base de données, Supabase. Le détail figure dans nos <a href="mentions-legales.html">Mentions légales</a> et notre <a href="privacy-fr.html">Politique de confidentialité</a>.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -119,7 +197,7 @@
         </div>
         <div style="display:flex; gap:14px; flex-wrap:wrap;">
           <a href="get-started-fr.html" class="btn btn-gold btn-lg">Commencer</a>
-          <a href="pricing-fr.html" class="btn btn-ghost-light btn-lg">Comparer les formules</a>
+          <a href="pricing-fr.html" class="btn btn-ghost-light btn-lg">Comparer les tarifs</a>
         </div>
       </div>
     </div>
@@ -134,7 +212,7 @@
           <img src="/assets/logo-icon.png" alt="Domegarde" class="logo-icon">
           Domegarde
         </div>
-        <p>Gardien IA agentique de patrimoine pour les propriétaires bailleurs indépendants en France. Conçu à Paris.</p>
+        <p>Louez en règle, sans y penser. Pour les propriétaires bailleurs indépendants en France. Conçu à Paris.</p>
       </div>
       <div class="footer-col">
         <h4>Produit</h4>
