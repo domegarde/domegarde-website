@@ -447,3 +447,40 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 /* -------------------- Misc page bits -------------------- */
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 @media (max-width: 860px) { .two-col { grid-template-columns: 1fr; } }
+
+
+/* -------------------- Batch 1 additions (legal and honesty fixes) -------------------- */
+
+/* A feature that is announced but not released yet. */
+.badge-dev {
+  display: inline-block; margin-left: 8px; padding: 2px 9px; border-radius: 999px;
+  border: 1px solid var(--gold); background: rgba(201,168,76,0.10); color: var(--gold-deep);
+  font-family: var(--font-body); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.05em;
+  text-transform: uppercase; white-space: nowrap; vertical-align: middle; line-height: 1.5;
+}
+/* A list item with a badge flows as one line of text, so the badge sits after the words. */
+.tier-features li.has-badge { display: block; }
+.feature-card .badge-dev { display: table; margin: 12px 0 0 0; }
+
+/* Visible placeholder for company details still to be filled in. Search the
+   site for "À COMPLÉTER" to find every one. */
+.todo { background: #FFF3B0; color: #6B4E00; padding: 0 4px; border-radius: 3px; font-weight: 600; }
+
+/* Hero mock-up: a third status colour, and room for longer labels. */
+.dot.miss { background: #A3403A; }
+.ledger-row { gap: 14px; }
+.ledger-row .status { white-space: nowrap; }
+
+/* Early-access form: separate, unticked marketing checkbox and next steps. */
+.form-check { display: flex; gap: 12px; align-items: flex-start; margin: 4px 0 22px; }
+.form-check input { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; accent-color: var(--gold-deep); }
+.form-check label { font-size: 0.86rem; font-weight: 400; color: var(--ink-soft); line-height: 1.5; }
+.form-note a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; }
+.next-steps { margin-top: 36px; }
+.next-steps h3 { font-size: 1.05rem; margin-bottom: 14px; }
+.next-steps ol { margin: 0; padding-left: 22px; }
+.next-steps li { color: var(--ink); font-size: 0.96rem; line-height: 1.6; margin-bottom: 10px; }
+
+/* Legal pages: anchored headings clear the sticky header; wide tables scroll on phones instead of widening the page. */
+.legal-wrap h2[id] { scroll-margin-top: 110px; }
+@media (max-width: 640px) { .legal-wrap table { display: block; overflow-x: auto; } }

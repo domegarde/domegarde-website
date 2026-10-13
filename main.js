@@ -10,6 +10,19 @@
 const SUPABASE_URL = 'https://eijwocytpslnxvkgnvgh.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_ok-gbn36McHXGbu_ZC-56w_xUYOocW6';
 
+// Messages shown by the forms, in the language of the page.
+const LANG = (document.documentElement.lang || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+const MESSAGES = {
+  en: {
+    sending: 'Sending\u2026',
+    error: 'Something went wrong sending that. Please try again, or email us directly.'
+  },
+  fr: {
+    sending: 'Envoi\u2026',
+    error: "Une erreur est survenue lors de l'envoi. Merci de r\u00e9essayer, ou \u00e9crivez-nous directement."
+  }
+};
+
 async function insertContact(payload) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/contacts`, {
     method: 'POST',
@@ -27,26 +40,28 @@ async function insertContact(payload) {
   }
 }
 
-function wireForm(formId, statusId, buildPayload) {
+function wireForm(formId, statusId, buildPayload, successText) {
   const form = document.getElementById(formId);
   if (!form) return;
   const status = document.getElementById(statusId);
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    // Name, email and message must be filled in and valid before anything is sent.
+    if (!form.checkValidity()) { form.reportValidity(); return; }
     const btn = form.querySelector('button[type="submit"]');
     const originalLabel = btn.textContent;
     btn.disabled = true;
-    btn.textContent = 'Sending…';
+    btn.textContent = MESSAGES[LANG].sending;
     status.classList.remove('show', 'ok', 'err');
 
     try {
       const payload = buildPayload(new FormData(form));
       await insertContact(payload);
-      status.textContent = 'Thanks — we\u2019ve received your details and will be in touch shortly.';
+      status.textContent = successText[LANG];
       status.classList.add('show', 'ok');
       form.reset();
     } catch (err) {
-      status.textContent = 'Something went wrong sending that. Please try again, or email us directly.';
+      status.textContent = MESSAGES[LANG].error;
       status.classList.add('show', 'err');
     } finally {
       btn.disabled = false;
@@ -89,7 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
     phone: fd.get('phone') || null,
     preferred_language: fd.get('preferred_language') || null,
     message: fd.get('message') || null
-  }));
+  }), {
+    en: 'Thanks \u2014 we\u2019ve received your details and will be in touch shortly.',
+    fr: "Merci \u2014 nous avons bien re\u00e7u vos coordonn\u00e9es et reviendrons vers vous rapidement."
+  });
 
   wireForm('get-started-form', 'get-started-status', (fd) => ({
     name: fd.get('name'),
@@ -98,6 +116,11 @@ document.addEventListener('DOMContentLoaded', () => {
     number_of_properties: fd.get('number_of_properties') ? parseInt(fd.get('number_of_properties'), 10) : null,
     plan_interest: fd.get('plan_interest') || null,
     preferred_language: fd.get('preferred_language') || null,
-    message: fd.get('message') || null
-  }));
+    message: fd.get('message') || null,
+    // Separate, unticked-by-default tick box. The enquiry works without it.
+    marketing_consent: fd.get('marketing_consent') === 'yes'
+  }), {
+    en: 'Thanks \u2014 we\u2019ve received your request. We\u2019ll email you, usually within one business day.',
+    fr: "Merci \u2014 nous avons bien re\u00e7u votre demande. Nous vous r\u00e9pondrons par e-mail, g\u00e9n\u00e9ralement sous un jour ouvr\u00e9."
+  });
 });

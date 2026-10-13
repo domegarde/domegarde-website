@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Commencer — Domegarde</title>
-<meta name="description" content="Parlez-nous de votre patrimoine et nous vous orienterons vers la bonne formule Domegarde.">
+<title>Demander un accès anticipé — Domegarde</title>
+<meta name="description" content="Demandez un accès anticipé à Domegarde : parlez-nous de votre patrimoine et nous reviendrons vers vous avec la bonne formule et les prochaines étapes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
   <section class="hero" style="padding-bottom: 20px;">
     <div class="wrap two-col">
       <div class="reveal">
-        <div class="eyebrow">Commencer</div>
+        <div class="eyebrow">Demander un accès anticipé</div>
         <h1 style="font-size: clamp(2.3rem, 4.4vw, 3.6rem);">Organisons correctement votre patrimoine.</h1>
         <p class="hero-sub" style="margin-top: 18px;">Parlez-nous un peu de ce que vous gérez et nous reviendrons vers vous avec la bonne formule et les prochaines étapes — généralement sous un jour ouvré.</p>
         <div class="stage-list" style="margin-top: 40px; border-top: none;">
@@ -58,6 +58,14 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
             <p style="color: var(--ink);">Vous ne savez pas quelle formule choisir ? Laissez vide — nous vous aiderons à le déterminer.</p>
           </div>
+        </div>
+        <div class="next-steps">
+          <h3>Les prochaines étapes</h3>
+          <ol>
+            <li>Nous vous répondons par e-mail, généralement sous un jour ouvré.</li>
+            <li>Nous faisons le point sur vos biens et sur la formule qui convient. Sans engagement.</li>
+            <li>Si l'adéquation est bonne, nous créons votre compte.</li>
+          </ol>
         </div>
       </div>
 
@@ -103,9 +111,13 @@
             <label for="g-message-fr">Autre chose à nous dire ?</label>
             <textarea id="g-message-fr" name="message" placeholder="Détails du patrimoine, calendrier, questions..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer la demande</button>
+          <div class="form-check">
+            <input type="checkbox" id="g-marketing-fr" name="marketing_consent" value="yes">
+            <label for="g-marketing-fr">Oui, je souhaite recevoir les actualités de Domegarde par e-mail. Facultatif — vous pouvez vous désinscrire à tout moment.</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Demander un accès anticipé</button>
           <p id="get-started-status" class="form-status"></p>
-          <p class="form-note">En soumettant, vous acceptez d'être contacté au sujet de Domegarde. Jamais de spam.</p>
+          <p class="form-note">Nous utilisons vos coordonnées uniquement pour répondre à cette demande. Nous n'enverrons des e-mails d'actualités que si vous cochez la case ci-dessus. Voir notre <a href="privacy-fr.html">Politique de confidentialité</a>.</p>
         </form>
       </div>
     </div>
@@ -134,7 +146,8 @@
         <a href="about-fr.html#contact">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Mentions légales</h4>
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
         <a href="terms-fr.html">Conditions d'utilisation</a>
         <a href="privacy-fr.html">Politique de confidentialité</a>
       </div>
