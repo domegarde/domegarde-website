@@ -6,6 +6,24 @@
 <title>Privacy Policy — Domegarde</title>
 <meta name="description" content="Domegarde's Privacy Policy.">
 <meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.domegarde.com/privacy.html">
+<link rel="alternate" hreflang="en" href="https://www.domegarde.com/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://www.domegarde.com/privacy-fr.html">
+<link rel="alternate" hreflang="x-default" href="https://www.domegarde.com/privacy-fr.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Domegarde">
+<meta property="og:title" content="Privacy Policy — Domegarde">
+<meta property="og:description" content="Domegarde's Privacy Policy.">
+<meta property="og:url" content="https://www.domegarde.com/privacy.html">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:image" content="https://www.domegarde.com/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Domegarde — Let by the book, without the worry">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F1EF">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
@@ -19,21 +37,22 @@
   .legal-wrap p, .legal-wrap li { color: var(--ink-soft); font-size: 0.98rem; line-height: 1.7; margin-bottom: 14px; }
   .legal-wrap ul { padding-left: 22px; }
   .legal-wrap strong { color: var(--ink); }
-  .legal-wrap a.inline-link { color: var(--gold-deep); font-weight: 600; }
+  .legal-wrap a.inline-link { color: var(--gold-text); font-weight: 600; }
   .legal-wrap table { width: 100%; border-collapse: collapse; margin: 8px 0 24px; }
   .legal-wrap th, .legal-wrap td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 0.92rem; color: var(--ink-soft); vertical-align: top; }
   .legal-wrap th { color: var(--ink); font-weight: 600; }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-header">
   <div class="wrap nav">
     <a href="index.html" class="brand">
-      <img src="/assets/logo-icon.png" alt="Domegarde" class="logo-icon">
+      <img src="/assets/logo-icon.png" alt="" class="logo-icon">
       Domegarde
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="pricing.html">Pricing</a>
@@ -42,14 +61,14 @@
     </nav>
     <div class="nav-cta">
       <a href="https://domegarde-app.vercel.app/login" class="login-link">Log in</a>
-      <a href="get-started.html" class="btn btn-primary">Get started</a>
-      <a href="privacy-fr.html" class="lang-switch">FR</a>
+      <a href="get-started.html" class="btn btn-primary">Request early access</a>
+      <a href="privacy-fr.html" class="lang-switch" lang="fr" hreflang="fr" aria-label="FR, Français">FR</a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
   <div class="wrap legal-wrap">
     <h1>Privacy Policy</h1>
     <p class="legal-updated">Last updated: October 2026</p>
@@ -61,6 +80,7 @@
     <p>Domegarde is the data controller for personal data processed through our marketing website, and acts as a data processor on behalf of landlords for tenant and property data managed within the app. Domegarde is based in Paris, France. Our company details are in our <a href="legal-notice.html" class="inline-link">Legal notice</a>.</p>
 
     <h2>2. What Data We Collect</h2>
+    <div class="table-scroll" data-label="Data we collect">
     <table>
       <tr><th>Category</th><th>Examples</th></tr>
       <tr><td>Account data</td><td>Name, email address, phone number, password (encrypted)</td></tr>
@@ -71,6 +91,7 @@
       <tr><td>Contact form data</td><td>Name, email, phone, message, preferred contact language, number of properties and plan of interest, and whether you chose to receive our news by email, for enquiries submitted via our website</td></tr>
           <tr><td>Research questionnaire</td><td>Your answers (saved as a draft while you fill it in, even if you do not press Send) and, only if you give them, your name, email, phone, number of properties and preferred language; also the link you came from and your browser information</td></tr>
     </table>
+    </div>
 
     <h2>3. Why We Process This Data</h2>
     <ul>
@@ -83,12 +104,16 @@
 
     <h2>4. Who We Share Data With</h2>
     <p>We use a small number of service providers and recipients to operate the service:</p>
+    <div class="table-scroll" data-label="Service providers">
     <table>
       <tr><th>Provider</th><th>What it does</th><th>Where</th></tr>
       <tr><td>Supabase</td><td>Database, authentication and file storage</td><td>EU — Paris region</td></tr>
       <tr><td>Vercel Inc.</td><td>Hosting for our website and application</td><td>Global edge network; the company is based in the United States. Application server region: <mark class="todo">[RÉGION VERCEL À COMPLÉTER]</mark></td></tr>
       <tr><td>AI provider</td><td>AI features, once released</td><td><mark class="todo">[FOURNISSEUR D'IA À COMPLÉTER, OU « AUCUN À CE JOUR »]</mark></td></tr>
+      <tr><td>Payment provider</td><td>Taking payment for paid plans, once offered</td><td><mark class="todo">[PRESTATAIRE DE PAIEMENT À COMPLÉTER, OU « AUCUN À CE JOUR »]</mark></td></tr>
+      <tr><td>Email provider</td><td>Sending our emails (replies to enquiries, news and updates)</td><td><mark class="todo">[PRESTATAIRE D'E-MAIL À COMPLÉTER, OU « AUCUN À CE JOUR »]</mark></td></tr>
     </table>
+    </div>
     <p>We do not sell personal data to third parties.</p>
 
     <h2>5. International Data Transfers</h2>
@@ -131,13 +156,13 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand">
-          <img src="/assets/logo-icon.png" alt="Domegarde" class="logo-icon">
+          <img src="/assets/logo-icon.png" alt="" class="logo-icon">
           Domegarde
         </div>
         <p>Let by the book, without the worry. For independent landlords in France. Built in Paris.</p>
       </div>
       <div class="footer-col">
-        <h4>Product</h4>
+        <p class="footer-title">Product</p>
         <a href="index.html">Home</a>
         <a href="pricing.html">Pricing</a>
         <a href="whats-coming.html">What's coming</a>
@@ -145,12 +170,12 @@
         <a href="get-started.html">Get started</a>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <p class="footer-title">Company</p>
         <a href="about.html">About</a>
         <a href="about.html#contact">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <p class="footer-title">Legal</p>
         <a href="legal-notice.html">Legal notice</a>
         <a href="terms.html">Terms of service</a>
         <a href="privacy.html">Privacy policy</a>

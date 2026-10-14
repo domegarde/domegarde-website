@@ -97,6 +97,24 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach((el) => el.classList.add('visible'));
   }
 
+  // Wide tables scroll sideways on small screens. Make that scroll area reachable with
+  // the keyboard, but only while it actually scrolls (no pointless tab stop otherwise).
+  const scrollers = document.querySelectorAll('.compare-wrap, .table-scroll');
+  const markScrollers = () => scrollers.forEach((el) => {
+    if (el.scrollWidth > el.clientWidth + 1) {
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('role', 'region');
+      el.setAttribute('aria-label', el.getAttribute('data-label') || '');
+    } else {
+      el.removeAttribute('tabindex');
+      el.removeAttribute('role');
+      el.removeAttribute('aria-label');
+    }
+  });
+  markScrollers();
+  window.addEventListener('resize', markScrollers);
+  window.addEventListener('load', markScrollers);
+
   // Wire known forms if present on this page
   wireForm('about-contact-form', 'about-contact-status', (fd) => ({
     name: fd.get('name'),

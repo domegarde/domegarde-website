@@ -2,7 +2,7 @@
    Domegarde — Marketing Site
    Design tokens follow the brand guide exactly:
    bg #F2F1EF · card #FFFFFF · ink #1A1A1A · gold #C9A84C
-   muted #6B7280 · border #E5E7EB · font Inter (body/UI)
+   muted #646A77 · border #E5E7EB · font Inter (body/UI)
    Display face is Poppins (headlines); body and UI face is Inter.
    Both are self-hosted — see the @font-face rules below.
    ============================================================ */
@@ -79,10 +79,11 @@
   --bg: #F2F1EF;
   --surface: #FFFFFF;
   --ink: #1A1A1A;
-  --ink-soft: #6B7280;
+  --ink-soft: #646A77;   /* darkened from #6B7280 so small grey text passes WCAG AA on every background */
   --border: #E5E7EB;
   --gold: #C9A84C;
   --gold-deep: #A6813A;
+  --gold-text: #82652E;   /* gold for SMALL text on light backgrounds (passes WCAG AA); --gold-deep stays for large type and icons */
   --deep: #14140F;
   --deep-text: #F2F1EF;
 
@@ -147,7 +148,7 @@ p { margin: 0; color: var(--ink-soft); }
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold-deep);
+  color: var(--gold-text);
   margin-bottom: 18px;
 }
 .eyebrow::before {
@@ -197,7 +198,7 @@ header.site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 18px 28px;
 }
 .brand {
   display: flex;
@@ -261,7 +262,7 @@ header.site-header {
 .nav-toggle span::before { position: absolute; top: -6px; }
 .nav-toggle span::after { position: absolute; top: 6px; }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .nav-links { position: fixed; top: 68px; left: 0; right: 0; background: var(--bg);
     flex-direction: column; align-items: flex-start; gap: 0; border-bottom: 1px solid var(--border);
     max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
@@ -383,7 +384,7 @@ section { padding: 88px 0; }
 .feature-card p { font-size: 0.92rem; }
 .feature-card .tier-note {
   display: inline-block; margin-top: 14px; font-size: 0.72rem; font-weight: 600;
-  color: var(--gold-deep); letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--gold-text); letter-spacing: 0.04em; text-transform: uppercase;
 }
 
 @media (max-width: 900px) { .feature-grid { grid-template-columns: 1fr 1fr; } }
@@ -396,7 +397,7 @@ section { padding: 88px 0; }
   padding: 36px 0; border-bottom: 1px solid var(--border);
 }
 .stage-item .num {
-  font-family: var(--font-display); font-size: 2.4rem; color: var(--gold);
+  font-family: var(--font-display); font-size: 2.4rem; color: var(--gold-deep);
   font-weight: 400; line-height: 1;
 }
 .stage-item h3 { margin-bottom: 10px; }
@@ -500,11 +501,11 @@ table.compare .no { color: var(--border); }
 footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padding: 56px 0 32px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 44px; }
 .footer-brand .brand { color: var(--deep-text); margin-bottom: 14px; }
-.footer-brand p { max-width: 32ch; font-size: 0.88rem; color: rgba(242,241,239,0.55); }
-.footer-col h4 { font-family: var(--font-body); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,239,0.4); margin-bottom: 16px; font-weight: 600; }
+.footer-brand p { max-width: 32ch; font-size: 0.88rem; color: rgba(242,241,239,0.68); }
+.footer-col .footer-title { font-family: var(--font-body); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,239,0.64); margin-bottom: 16px; font-weight: 600; }
 .footer-col a { display: block; font-size: 0.9rem; margin-bottom: 12px; color: rgba(242,241,239,0.72); transition: color 0.15s ease; }
 .footer-col a:hover { color: var(--gold); }
-.footer-bottom { border-top: 1px solid rgba(242,241,239,0.12); padding-top: 24px; display: flex; justify-content: space-between; font-size: 0.8rem; flex-wrap: wrap; gap: 12px; color: rgba(242,241,239,0.42); }
+.footer-bottom { border-top: 1px solid rgba(242,241,239,0.12); padding-top: 24px; display: flex; justify-content: space-between; font-size: 0.8rem; flex-wrap: wrap; gap: 12px; color: rgba(242,241,239,0.64); }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
 
@@ -522,7 +523,7 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 /* A feature that is announced but not released yet. */
 .badge-dev {
   display: inline-block; margin-left: 8px; padding: 2px 9px; border-radius: 999px;
-  border: 1px solid var(--gold); background: rgba(201,168,76,0.10); color: var(--gold-deep);
+  border: 1px solid var(--gold); background: rgba(201,168,76,0.10); color: var(--gold-text);
   font-family: var(--font-body); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.05em;
   text-transform: uppercase; white-space: nowrap; vertical-align: middle; line-height: 1.5;
 }
@@ -543,15 +544,15 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 .form-check { display: flex; gap: 12px; align-items: flex-start; margin: 4px 0 22px; }
 .form-check input { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; accent-color: var(--gold-deep); }
 .form-check label { font-size: 0.86rem; font-weight: 400; color: var(--ink-soft); line-height: 1.5; }
-.form-note a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; }
+.form-note a { color: var(--gold-text); font-weight: 600; text-decoration: underline; }
 .next-steps { margin-top: 36px; }
-.next-steps h3 { font-size: 1.05rem; margin-bottom: 14px; }
+.next-steps h2 { font-size: 1.05rem; margin-bottom: 14px; }
 .next-steps ol { margin: 0; padding-left: 22px; }
 .next-steps li { color: var(--ink); font-size: 0.96rem; line-height: 1.6; margin-bottom: 10px; }
 
 /* Legal pages: anchored headings clear the sticky header; wide tables scroll on phones instead of widening the page. */
 .legal-wrap h2[id] { scroll-margin-top: 110px; }
-@media (max-width: 640px) { .legal-wrap table { display: block; overflow-x: auto; } }
+.table-scroll { overflow-x: auto; }
 
 
 /* -------------------- Batch 2 additions (home page copy, header, FAQ) -------------------- */
@@ -559,7 +560,7 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 /* Header: Get started and Log in live in the menu only on phones; on desktop they are the two buttons on the right. */
 .nav-links a { white-space: nowrap; }
 .nav-links .nav-mobile { display: none; }
-@media (max-width: 860px) { .nav-links .nav-mobile { display: block; } }
+@media (max-width: 960px) { .nav-links .nav-mobile { display: block; } }
 
 /* Hero: the AI line is supporting, not the headline. */
 .hero-sub + .hero-ai { margin-top: -18px; }
@@ -590,7 +591,7 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 .faq summary::after { content: '+'; color: var(--gold-deep); font-size: 1.5rem; line-height: 1; flex-shrink: 0; }
 .faq details[open] summary::after { content: '\2013'; }
 .faq details p { margin-top: 12px; max-width: 62ch; }
-.faq p a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; }
+.faq p a { color: var(--gold-text); font-weight: 600; text-decoration: underline; }
 
 
 /* -------------------- Batch 3 additions (About, What's coming, landlords abroad) -------------------- */
@@ -600,7 +601,7 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
   font-size: 0.68rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; vertical-align: middle; line-height: 1.5; }
 .badge-live { border: 1px solid #4C7A4E; background: rgba(76,122,78,0.10); color: #3F6B41; }
 .badge-plan { border: 1px solid var(--border); color: var(--ink-soft); }
-.hero-ai a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; margin-left: 4px; }
+.hero-ai a { color: var(--gold-text); font-weight: 600; text-decoration: underline; margin-left: 4px; }
 
 /* What's coming */
 .status-group { margin-top: 64px; }
@@ -614,7 +615,7 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 .note-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 30px 32px; margin-top: 64px; }
 .note-box h2 { font-size: 1.25rem; margin-bottom: 12px; }
 .note-box p { max-width: 66ch; }
-.note-box a, .status-item a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; }
+.note-box a, .status-item a { color: var(--gold-text); font-weight: 600; text-decoration: underline; }
 
 /* About: founders and screenshots (placeholders until the real ones exist). */
 .founders-story { max-width: 62ch; margin-top: 8px; }
@@ -639,3 +640,25 @@ footer.site-footer { background: var(--deep); color: rgba(242,241,239,0.6); padd
 .feature-grid.six { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 900px) { .feature-grid.six { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .feature-grid.six { grid-template-columns: 1fr; } }
+
+
+/* -------------------- Launch readiness: accessibility -------------------- */
+.skip-link {
+  position: absolute; left: 12px; top: -64px; z-index: 200;
+  background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 8px;
+  font-size: 0.9rem; font-weight: 600;
+}
+.skip-link:focus { top: 12px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--gold-deep); outline-offset: 3px; border-radius: 4px;
+}
+.form-field input:focus-visible, .form-field select:focus-visible, .form-field textarea:focus-visible {
+  outline: 2px solid var(--gold-deep); outline-offset: 1px;
+}
+.compare-wrap:focus-visible, .table-scroll:focus-visible { outline-offset: -2px; }
+
+/* Very small phones: keep logo, language switch and menu button from touching. */
+@media (max-width: 400px) {
+  .nav .brand { font-size: 1.1rem; gap: 8px; }
+  .nav-cta { gap: 8px; }
+}
