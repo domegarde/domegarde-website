@@ -115,6 +115,22 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', markScrollers);
   window.addEventListener('load', markScrollers);
 
+  // Pricing: monthly / annual switch. Every figure that changes carries both values in data attributes.
+  const billing = document.querySelector('.billing-toggle');
+  if (billing) {
+    const buttons = billing.querySelectorAll('button[data-billing]');
+    const apply = (mode) => {
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute('data-billing') === mode)));
+      document.querySelectorAll('[data-monthly][data-annual]').forEach((el) => {
+        el.textContent = el.getAttribute('data-' + mode);
+        if (el.classList.contains('tier-annual')) el.classList.toggle('saving', mode === 'annual');
+      });
+    };
+    buttons.forEach((b) => b.addEventListener('click', () => apply(b.getAttribute('data-billing'))));
+    billing.classList.add('ready');
+    apply('monthly');
+  }
+
   // Wire known forms if present on this page
   wireForm('about-contact-form', 'about-contact-status', (fd) => ({
     name: fd.get('name'),

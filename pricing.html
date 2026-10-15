@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://www.domegarde.com/assets/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Domegarde — Let by the book, without the worry">
+<meta property="og:image:alt" content="Domegarde — Never miss a rule, a deadline or a rent rise">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F2F1EF">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
@@ -66,13 +66,19 @@
 
   <section style="padding-top: 24px;">
     <div class="wrap">
+      <div class="billing-toggle reveal" role="group" aria-label="Billing period">
+        <div class="seg">
+          <button type="button" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" data-billing="annual" aria-pressed="false">Annual <span class="save">2 months free</span></button>
+        </div>
+      </div>
       <div class="tier-grid">
 
         <div class="tier-card reveal">
           <div class="tier-name">Steward</div>
           <p class="tier-desc">Core administration for landlords getting their first properties properly organised.</p>
-          <div class="tier-price"><span class="amount">€35</span><span class="period">/ month</span></div>
-          <div class="tier-annual">or €349/year</div>
+          <div class="tier-price"><span class="amount" data-monthly="€35" data-annual="€349">€35</span><span class="period" data-monthly="/ month" data-annual="/ year">/ month</span></div>
+          <div class="tier-annual" data-monthly="or €349/year" data-annual="That's €29.08 a month · you save €71 a year">or €349/year</div>
           <ul class="tier-features">
             <li>✓ Up to 3 properties</li>
             <li>✓ Core admin &amp; compliance tracking</li>
@@ -87,8 +93,8 @@
           <span class="featured-tag">Most popular</span>
           <div class="tier-name">Sentinel</div>
           <p class="tier-desc">Everything in Steward, plus the agentic AI steward (in development), for growing portfolios.</p>
-          <div class="tier-price"><span class="amount">€60</span><span class="period">/ month</span></div>
-          <div class="tier-annual">or €599/year</div>
+          <div class="tier-price"><span class="amount" data-monthly="€60" data-annual="€599">€60</span><span class="period" data-monthly="/ month" data-annual="/ year">/ month</span></div>
+          <div class="tier-annual" data-monthly="or €599/year" data-annual="That's €49.92 a month · you save €121 a year">or €599/year</div>
           <ul class="tier-features">
             <li>✓ Up to 10 properties</li>
             <li>✓ Everything in Steward</li>
@@ -102,8 +108,8 @@
         <div class="tier-card reveal">
           <div class="tier-name">Sovereign</div>
           <p class="tier-desc">Unlimited scale and enterprise features for serious portfolios.</p>
-          <div class="tier-price"><span class="amount">€499</span><span class="period">/ month</span></div>
-          <div class="tier-annual">or €4,990/year</div>
+          <div class="tier-price"><span class="amount" data-monthly="€499" data-annual="€4,990">€499</span><span class="period" data-monthly="/ month" data-annual="/ year">/ month</span></div>
+          <div class="tier-annual" data-monthly="or €4,990/year" data-annual="That's €415.83 a month · you save €998 a year">or €4,990/year</div>
           <ul class="tier-features">
             <li>✓ Unlimited properties</li>
             <li>✓ Everything in Sentinel</li>
@@ -158,7 +164,7 @@
           <img src="/assets/logo-icon.png" alt="" class="logo-icon">
           Domegarde
         </div>
-        <p>Let by the book, without the worry. For independent landlords in France. Built in Paris.</p>
+        <p>Never miss a rule, a deadline or a rent rise. For independent landlords in France. Built in Paris.</p>
       </div>
       <div class="footer-col">
         <p class="footer-title">Product</p>

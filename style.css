@@ -662,3 +662,49 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   .nav .brand { font-size: 1.1rem; gap: 8px; }
   .nav-cta { gap: 8px; }
 }
+
+
+/* -------------------- Walkthrough batch -------------------- */
+
+/* Home hero: the headline is a sentence now, so it sits a little smaller and balances its lines. */
+.hero h1.h1-long { font-size: clamp(2.1rem, 3.6vw, 3.2rem); text-wrap: balance; line-height: 1.12; }
+
+/* Hero card: a worked example of the dashboard, not a mock-up of a checklist. */
+.hero-visual.needs { aspect-ratio: auto; padding: 24px 26px 22px; gap: 14px; }
+.needs-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.needs-title { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 0.98rem; color: var(--ink); }
+.needs-tag { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft);
+  border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px; white-space: nowrap; background: var(--bg); }
+.need-list { list-style: none; margin: 0; padding: 0; }
+.need { display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 13px 0; border-bottom: 1px dashed var(--border); }
+.need:last-child { border-bottom: none; }
+.need .bar { width: 4px; align-self: stretch; border-radius: 2px; background: var(--border); }
+.need.crit .bar { background: #A3403A; }
+.need.warn .bar { background: var(--gold); }
+.need strong { display: block; font-size: 0.86rem; line-height: 1.35; color: var(--ink); font-weight: 600; }
+.need .sub { display: block; margin-top: 2px; font-size: 0.76rem; line-height: 1.4; color: var(--ink-soft); }
+.need .chip { font-size: 0.66rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; background: #ECEBE8; color: #4B515C; }
+.need.crit .chip { background: rgba(163,64,58,0.10); color: #8F3530; }
+.need.warn .chip { background: rgba(201,168,76,0.14); color: var(--gold-text); }
+@media (max-width: 520px) {
+  .need { grid-template-columns: 4px minmax(0, 1fr); }
+  .need .chip { grid-column: 2; justify-self: start; }
+}
+
+/* Real screenshots (with example data). */
+.shot-img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--surface); }
+.shots-note { margin-top: 10px; max-width: 62ch; }
+
+/* Monthly / annual switch on the pricing page. Hidden until the script is running, so without it
+   the page still shows both prices as before. */
+.billing-toggle { display: none; justify-content: center; margin: 0 auto 36px; }
+.billing-toggle.ready { display: flex; }
+.billing-toggle .seg { display: inline-flex; gap: 4px; padding: 4px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.billing-toggle button { font: inherit; font-size: 0.9rem; font-weight: 600; color: var(--ink-soft); background: transparent; border: 0;
+  padding: 9px 20px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.billing-toggle button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.billing-toggle button:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
+.billing-toggle .save { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 8px;
+  border-radius: 999px; background: rgba(201,168,76,0.22); color: #5E4A1F; }
+.billing-toggle button[aria-pressed="true"] .save { background: var(--gold); color: var(--ink); }
+.tier-annual.saving { color: var(--gold-text); font-weight: 600; min-height: 2.7em; }
