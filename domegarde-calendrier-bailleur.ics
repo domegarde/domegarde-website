@@ -1,0 +1,155 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Domegarde//Landlord calendar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Domegarde : calendrier du bailleur\, France
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-1-2026-10-20@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Domegarde : Taxe foncière : dernier jour pour payer en ligne
+DESCRIPTION:20 octobre 2026. Le paiement en ligne est dû avant minuit le 2
+ 0 octobre 2026 \; les autres modes de paiement avant le 15 octobre. Votre 
+ avis indique votre date et votre montant. Source: https://www.service-publ
+ ic.gouv.fr/particuliers/actualites/A15144 (Vérifié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Taxe foncière : dernier jour pour payer en ligne
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-2-2026-11-25@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Domegarde : Fin prévue de l'expérimentation de l'encadrement des 
+ loyers\, sauf prolongation
+DESCRIPTION:25 novembre 2026 (24 sur une page officielle). L'ANIL et la pro
+ position de loi n° 2039 de l'Assemblée nationale indiquent le 25 novembr
+ e \; une page de Service-Public indique le 24. Le texte de loi doit tranch
+ er. D'ici là\, l'encadrement s'applique là où il s'applique. Voir notre
+  article pour le point sur le dossier. Source: https://www.anil.org/aj-exp
+ erimentation-encadrement-niveau-loyers-zones-tendues/ (Vérifié le 16 oct
+ obre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fin prévue de l'expérimentation de l'encadrement des loyers\,
+  sauf prolongation
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-3-2026-12-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Domegarde : CFE : solde à payer
+DESCRIPTION:15 décembre 2026. En général\, le solde est dû au plus tard
+  le 15 décembre inclus\, ou le premier jour ouvrable suivant si c'est un 
+ week-end ou un jour férié. Vérifiez si vous la devez : certains loueurs
+  en meublé en sont exonérés. Source: https://entreprendre.service-publi
+ c.gouv.fr/vosdroits/F23547 (Vérifié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CFE : solde à payer
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-4-2027-01-01@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Domegarde : Taxe sur la vacance : une taxe unique dès l'imposition
+  2027
+DESCRIPTION:1er janvier 2027. Un logement est vacant s'il est vide au 1er j
+ anvier. Une seule taxe remplace les deux anciennes : un an de vacance dans
+  les communes en forte demande (17 %\, puis 34 %)\, deux ans ailleurs si l
+ a commune l'a instituée. Les années de vacance avant 2027 comptent. Sour
+ ce: https://www.service-public.gouv.fr/particuliers/actualites/A18896 (Vé
+ rifié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Taxe sur la vacance : une taxe unique dès l'imposition 2027
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-5-2027-01-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Domegarde : IRL du T4 2026 attendu (attendu)
+DESCRIPTION:Vers la mi-janvier 2027. L'Insee publie l'IRL de chaque trimest
+ re vers la mi-mois suivant (celui du T4 2025 est paru le 16 janvier 2026).
+  Les baux dont le trimestre de référence est le T4 peuvent alors être r
+ évisés. Source: https://www.insee.fr/fr/statistiques/serie/001515333 (V
+ érifié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRL du T4 2026 attendu (attendu)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-7-2027-04-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:Domegarde : IRL du T1 2027 attendu (attendu)
+DESCRIPTION:Vers la mi-avril 2027. L'IRL du T1 2026 a été publié le 16 a
+ vril 2026. Source: https://www.insee.fr/fr/statistiques/serie/001515333 (V
+ érifié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRL du T1 2027 attendu (attendu)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-8-2027-07-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:Domegarde : IRL du T2 2027 attendu (attendu)
+DESCRIPTION:Vers la mi-juillet 2027. L'IRL du T2 2026 a été publié le 12
+  juillet 2026. Source: https://www.insee.fr/fr/statistiques/serie/00151533
+ 3 (Vérifié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRL du T2 2027 attendu (attendu)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-fr-9-2027-07-31@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+SUMMARY:Domegarde : Plafonnement des hausses à la relocation ou au renouve
+ llement : fin prévue sauf reconduction
+DESCRIPTION:31 juillet 2027. Un décret du 20 juillet 2026 prolonge jusqu'a
+ u 31 juillet 2027 le plafonnement des hausses de loyer lors d'une relocati
+ on ou d'un renouvellement de bail dans les communes en zone tendue. Source
+ : https://www.service-public.gouv.fr/particuliers/actualites/A17566 (Véri
+ fié le 16 octobre 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Plafonnement des hausses à la relocation ou au renouvellement 
+ : fin prévue sauf reconduction
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -9,9 +9,13 @@ Writes blog.html, blog-fr.html, blog-<slug>.html, blog-<slug>-fr.html, feed.xml 
 Also reads blog-src/page-facts.<lang>.md and blog-src/page-changelog.<lang>.md and writes the "Domegarde in brief"
 pages (facts.html, en-bref.html) and the "What's new" pages (whats-new.html, nouveautes.html).
 The header and footer are copied from index.html / index-fr.html, so the blog always matches the rest of the site.
+Also writes the free tools (tools.html, irl-calculator.html, landlord-calendar.html and their French twins) from
+blog-src/page-tools|irl|calendar.<lang>.md; tool_widgets.py supplies the form, the calendar and the .ics files.
 Standard library only. See blog-src/README.md for how to write a post.
 """
 import argparse, datetime, glob, html, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import tool_widgets
 
 HOST = "https://www.domegarde.com"
 NOINDEX = True   # the whole site tells search engines to stay away until launch day; set to False when the site goes public
@@ -63,6 +67,9 @@ T = {
 PAGES = {  # simple pages written as text files: key -> output file per language, eyebrow per language
     "facts": {"files": {"en": "facts.html", "fr": "en-bref.html"}, "eyebrow": {"en": "Key facts", "fr": "L'essentiel"}},
     "changelog": {"files": {"en": "whats-new.html", "fr": "nouveautes.html"}, "eyebrow": {"en": "Changelog", "fr": "Journal des nouveautés"}},
+    "tools": {"files": {"en": "tools.html", "fr": "outils.html"}, "eyebrow": {"en": "Free tools", "fr": "Outils gratuits"}},
+    "irl": {"files": {"en": "irl-calculator.html", "fr": "calculateur-irl.html"}, "eyebrow": {"en": "Free tool", "fr": "Outil gratuit"}, "scripts": ["/irl.js"]},
+    "calendar": {"files": {"en": "landlord-calendar.html", "fr": "calendrier-bailleur.html"}, "eyebrow": {"en": "Free tool", "fr": "Outil gratuit"}},
 }
 ORG_ID = HOST + "/#organization"
 def jsonld(*objs):
@@ -382,7 +389,7 @@ def changelog_html(body, lang):
 def render_page(key, p, lang, other):
     t = T[lang]; files = PAGES[key]["files"]; own = files[lang]
     title = fr_typo(p["title"]) if lang == "fr" else p["title"]
-    body = changelog_html(p["body"], lang) if key == "changelog" else markdown(p["body"], lang)
+    body = changelog_html(p["body"], lang) if key == "changelog" else tool_widgets.fill(markdown(p["body"], lang), key, lang)
     ld_objs = []
     if key == "facts":
         ld_objs += [org_object(lang), {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Domegarde", "url": HOST + "/",
@@ -411,7 +418,8 @@ def render_page(key, p, lang, other):
 {cta(lang)}</main>
 
 '''
-    page += footer(lang) + '\n\n<script src="/main.js"></script>\n</body>\n</html>\n'
+    extra = "".join(f'<script src="{s}"></script>\n' for s in PAGES[key].get("scripts", []))
+    page += footer(lang) + '\n\n<script src="/main.js"></script>\n' + extra + '</body>\n</html>\n'
     return page
 
 def rfc822(iso):
@@ -451,7 +459,8 @@ def render_sitemap(posts):
              ("get-started.html","get-started-fr.html"),("terms.html","terms-fr.html"),("privacy.html","privacy-fr.html"),
              ("legal-notice.html","mentions-legales.html"),("whats-coming.html","ce-qui-arrive.html"),
              ("expat-landlords.html","proprietaires-non-residents.html"),("blog.html","blog-fr.html"),
-             ("facts.html","en-bref.html"),("whats-new.html","nouveautes.html")]
+             ("facts.html","en-bref.html"),("whats-new.html","nouveautes.html"),
+             ("tools.html","outils.html"),("irl-calculator.html","calculateur-irl.html"),("landlord-calendar.html","calendrier-bailleur.html")]
     for slug, date, by_lang in posts:
         if by_lang["en"]["status"] == "published" and by_lang["fr"]["status"] == "published":
             pairs.append((post_file(slug, "en"), post_file(slug, "fr")))
@@ -498,6 +507,8 @@ def main():
             srcs[lang] = parse_page(path)
         for lang, other in (("en", "fr"), ("fr", "en")):
             w(PAGES[key]["files"][lang], render_page(key, srcs[lang], lang, other))
+    for lang in ("en", "fr"):
+        w(tool_widgets.ICS_NAME[lang], tool_widgets.ics_file(lang))
     if args.sitemap_out:
         open(args.sitemap_out, "w", encoding="utf-8").write(render_sitemap(posts))
     pub = [f"{HOST}/{post_file(s, l)}" for s, d, b in posts if b['en']['status'] == 'published' for l in ('en', 'fr')]

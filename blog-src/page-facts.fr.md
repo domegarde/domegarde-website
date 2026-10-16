@@ -36,6 +36,7 @@ Domegarde est un logiciel pour les propriétaires bailleurs indépendants en Fra
 - **Indexation du loyer :** la révision annuelle selon l'IRL, calcul à l'appui, bloquée lorsque la loi gèle le loyer, avec la lettre de notification en français prête à signer.
 - **Portail locataire et messagerie :** le locataire consulte son bail, son historique de paiements et ses documents. Le fil de messages ne peut pas être modifié après coup et s'imprime comme historique.
 - **Tableau de bord :** ce qui demande votre attention dans vos biens.
+- **Outils gratuits sur ce site :** un calculateur de révision du loyer (IRL) et un calendrier du bailleur pour la France, gratuits et sans compte. Voir [Outils gratuits](outils.html).
 - **Français et anglais** partout.
 
 ## En développement

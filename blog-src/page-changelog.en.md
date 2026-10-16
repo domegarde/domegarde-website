@@ -3,6 +3,12 @@ title: What's new
 excerpt: What we have shipped, newest first: the app (Product) and this website (Website). Dates are the days the change went live.
 updated: 2026-10-16
 ---
+## 2026-10-16 | Two free tools for landlords | Website
+
+- A rent revision (IRL) calculator: your new rent from the INSEE index, with the formula shown and your deadline to claim it. Nothing you type leaves your browser.
+- A landlord's calendar for France: the dates that matter over the next year, each with its source, and a file for your own calendar.
+- The IRL table behind the calculator was checked against INSEE's data and now includes Q3 2026.
+
 ## 2026-10-16 | A blog, a facts page and this list | Website
 
 - A bilingual blog: what we are building, and what is changing in French rental rules, with sources.

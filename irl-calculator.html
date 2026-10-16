@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent revision calculator (IRL) — Domegarde</title>
+<meta name="description" content="Work out your new rent from the INSEE rent index (IRL) in under a minute, with the formula shown and your deadline to claim it. Free, no account, and nothing you type leaves your browser.">
+<link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.domegarde.com/irl-calculator.html">
+<link rel="alternate" hreflang="en" href="https://www.domegarde.com/irl-calculator.html">
+<link rel="alternate" hreflang="fr" href="https://www.domegarde.com/calculateur-irl.html">
+<link rel="alternate" hreflang="x-default" href="https://www.domegarde.com/calculateur-irl.html">
+<link rel="alternate" type="application/rss+xml" title="Domegarde blog" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Domegarde">
+<meta property="og:title" content="Rent revision calculator (IRL) — Domegarde">
+<meta property="og:description" content="Work out your new rent from the INSEE rent index (IRL) in under a minute, with the formula shown and your deadline to claim it. Free, no account, and nothing you type leaves your browser.">
+<meta property="og:url" content="https://www.domegarde.com/irl-calculator.html">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:image" content="https://www.domegarde.com/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Domegarde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F1EF">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Rent revision calculator (IRL)",
+  "description": "Work out your new rent from the INSEE rent index (IRL) in under a minute, with the formula shown and your deadline to claim it. Free, no account, and nothing you type leaves your browser.",
+  "inLanguage": "en",
+  "url": "https://www.domegarde.com/irl-calculator.html",
+  "dateModified": "2026-10-16",
+  "isPartOf": {
+    "@id": "https://www.domegarde.com/#organization"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="/assets/logo-icon.png" alt="" class="logo-icon">
+      Domegarde
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="get-started.html" class="nav-mobile">Get started</a>
+      <a href="https://domegarde-app.vercel.app/login" class="nav-mobile">Log in</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://domegarde-app.vercel.app/login" class="login-link">Log in</a>
+      <a href="get-started.html" class="btn btn-primary">Request early access</a>
+      <a href="calculateur-irl.html" class="lang-switch" lang="fr" hreflang="fr" aria-label="FR, Français">FR</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom: 24px;">
+    <div class="wrap" style="max-width: 760px;">
+      <div class="eyebrow">Free tool</div>
+      <h1 style="font-size: clamp(2.2rem, 4.2vw, 3.3rem);">Rent revision calculator (IRL)</h1>
+      <p class="hero-sub" style="max-width: 62ch; font-size: 1.15rem;">Work out your new rent from the INSEE rent index (IRL) in under a minute, with the formula shown and your deadline to claim it. Free, no account, and nothing you type leaves your browser.</p>
+      <p class="post-meta" style="margin: 18px 0 0;">Last updated: <time datetime="2026-10-16">16 October 2026</time></p>
+    </div>
+  </section>
+  <section style="padding-top: 0;">
+    <div class="wrap post-wrap">
+      <div class="post-body">
+<div class="form-card tool-card">
+<form id="irl-form" novalidate>
+<div class="form-field"><label for="irl-rent">Current monthly rent, excluding charges</label><input type="text" id="irl-rent" name="rent" inputmode="decimal" autocomplete="off" aria-describedby="irl-rent-hint irl-rent-err"><p class="form-note" id="irl-rent-hint">In euros, for example 600 or 600.50.</p><p class="tool-err" id="irl-rent-err" role="alert" hidden></p></div>
+<div class="form-field"><label for="irl-quarter">Reference quarter in your lease</label><select id="irl-quarter" name="quarter" aria-describedby="irl-quarter-hint irl-quarter-err"></select><p class="form-note" id="irl-quarter-hint">The IRL quarter your lease names. If it names none, the last index published when the lease was signed.</p><p class="tool-err" id="irl-quarter-err" role="alert" hidden></p></div>
+<div class="form-row">
+<div class="form-field"><label for="irl-date">Revision date</label><input type="date" id="irl-date" name="date" aria-describedby="irl-date-hint irl-date-err"><p class="form-note" id="irl-date-hint">Optional. The anniversary of the lease, or the date the lease sets. Used to show your deadline.</p><p class="tool-err" id="irl-date-err" role="alert" hidden></p></div>
+<div class="form-field"><label for="irl-dpe">Energy label (DPE)</label><select id="irl-dpe" name="dpe" aria-describedby="irl-dpe-hint"><option value="">I don&#x27;t know / not rated</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select><p class="form-note" id="irl-dpe-hint">A home rated F or G cannot have its rent revised.</p><p class="tool-err" id="irl-dpe-err" role="alert" hidden></p></div>
+</div>
+<button type="submit" class="btn btn-primary" style="width:100%;">Calculate the new rent</button>
+</form>
+<div id="irl-result" class="tool-result" role="status" aria-live="polite"></div>
+<noscript><p class="form-note">This calculator needs JavaScript. The latest index values are listed below, and the formula is explained on this page.</p></noscript>
+</div>
+<p><strong>Figures as of 16 October 2026.</strong> The latest index is Q3 2026: 148.06, published by INSEE on 15 October 2026. It is lower than Q2 2026 (148.37). That is correct: the index does not always rise.</p>
+<h2 id="how-the-calculation-works">How the calculation works</h2>
+<ul><li><strong>New rent = current rent × new index ÷ reference index.</strong></li><li><strong>Reference index:</strong> the quarter named in your lease. If the lease names none, it is the last index published when the lease was signed.</li><li><strong>New index:</strong> the same quarter, one year later.</li><li>The result is rounded to the cent.</li></ul>
+<h2 id="the-rules-this-calculator-applies">The rules this calculator applies</h2>
+<ul><li>A revision is possible once a year, and only if the lease contains an indexation clause.</li><li>You have one year from the revision date to ask. If you do not ask within that year, you lose the increase for that year.</li><li>The increase is not back-dated: it counts only from the day you tell your tenant. If the revision date was in March and you ask in June, only the rent from June on can be revised.</li><li>A home rated F or G on its energy label (DPE) cannot have its rent revised (leases signed, renewed or tacitly renewed since 24 August 2022).</li></ul>
+<h2 id="what-this-calculator-does-not-cover">What this calculator does not cover</h2>
+<ul><li>It does not read your lease. Check the clause, the reference quarter and the revision date it sets.</li><li>It is for residential leases. Commercial leases use a different index.</li><li>An increase at renewal of an under-valued rent, or after works, follows different rules.</li><li>It gives information, not legal advice.</li></ul>
+<h2 id="latest-published-values">Latest published values</h2>
+<div class="table-scroll"><table class="cal-table"><caption>Latest published values (figures as of 16 October 2026)</caption><thead><tr><th scope="col">Quarter</th><th scope="col">IRL</th></tr></thead><tbody><tr><th scope="row">2026 Q3</th><td>148.06</td></tr><tr><th scope="row">2026 Q2</th><td>148.37</td></tr><tr><th scope="row">2026 Q1</th><td>146.60</td></tr><tr><th scope="row">2025 Q4</th><td>145.78</td></tr><tr><th scope="row">2025 Q3</th><td>145.77</td></tr><tr><th scope="row">2025 Q2</th><td>146.68</td></tr><tr><th scope="row">2025 Q1</th><td>145.47</td></tr><tr><th scope="row">2024 Q4</th><td>144.64</td></tr><tr><th scope="row">2024 Q3</th><td>144.51</td></tr><tr><th scope="row">2024 Q2</th><td>145.17</td></tr><tr><th scope="row">2024 Q1</th><td>143.46</td></tr><tr><th scope="row">2023 Q4</th><td>142.06</td></tr></tbody></table></div>
+<h2 id="in-domegarde">In Domegarde</h2>
+<p>Domegarde does this for each of your properties. It picks the index from the lease start, shows the arithmetic, blocks the revision where the rent is frozen, shows your deadline on the dashboard, and prepares the notice letter in French. Domegarde is in early access: see <a href="whats-coming.html">What&#x27;s coming</a> and <a href="pricing.html">Pricing</a>. This calculator stays free either way.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://www.insee.fr/fr/statistiques/serie/001515333" target="_blank" rel="noopener">INSEE: Indice de référence des loyers, series 001515333</a>: every value above, read from INSEE&#x27;s data service on 16 October 2026.</li><li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1311" target="_blank" rel="noopener">Service-Public: Rent increase and revision during a lease</a>: the formula, the one-year window, no back-dating and the F and G rule.</li><li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F13723" target="_blank" rel="noopener">Service-Public: the IRL</a>.</li><li><a href="https://www.anil.org/outils/indices-et-plafonds/tableau-de-lirl/" target="_blank" rel="noopener">ANIL: table of the IRL</a>.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <div class="eyebrow">Ready when you are</div>
+          <h2>Ready to take control of your portfolio?</h2>
+        </div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="get-started.html" class="btn btn-gold btn-lg">Request early access</a>
+          <a href="pricing.html" class="btn btn-ghost-light btn-lg">Compare plans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="/assets/logo-icon.png" alt="" class="logo-icon">
+          Domegarde
+        </div>
+        <p>Never miss a rule, a deadline or a rent rise. For independent landlords in France. Built in Paris.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Product</p>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="whats-coming.html">What's coming</a>
+        <a href="whats-new.html">What's new</a>
+        <a href="tools.html">Free tools</a>
+        <a href="expat-landlords.html">Landlords abroad</a>
+        <a href="get-started.html">Get started</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Company</p>
+        <a href="about.html">About</a>
+        <a href="facts.html">Domegarde in brief</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Legal</p>
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="terms.html">Terms of service</a>
+        <a href="privacy.html">Privacy policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Domegarde. Paris, France.</span>
+      <span>Made for landlords who'd rather not think about spreadsheets.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script src="/irl.js"></script>
+</body>
+</html>

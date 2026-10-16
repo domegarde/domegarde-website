@@ -36,6 +36,7 @@ Domegarde is software for independent landlords in France. It works out which le
 - **Rent indexation:** the annual IRL revision with the arithmetic shown, blocked where the law freezes the rent, with the notice letter in French ready to sign.
 - **Tenant portal and messages:** the tenant sees their tenancy, payment history and documents. The message thread cannot be edited after the fact and prints as a record.
 - **Dashboard:** what needs attention across your properties.
+- **Free tools on this website:** a rent revision (IRL) calculator and a landlord's calendar for France, free and with no account. See [Free tools](tools.html).
 - **French and English** throughout.
 
 ## In development

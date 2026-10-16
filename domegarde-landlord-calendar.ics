@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Domegarde//Landlord calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Domegarde: landlord's calendar\, France
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+UID:domegarde-calendar-en-1-2026-10-20@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Domegarde: Property tax (taxe foncière): last day to pay online
+DESCRIPTION:20 October 2026. Online payment is due by midnight on 20 Octobe
+ r 2026\; other payment methods by 15 October. Your own notice shows your d
+ ate and amount. Source: https://www.service-public.gouv.fr/particuliers/ac
+ tualites/A15144 (Checked 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Property tax (taxe foncière): last day to pay online
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-2-2026-11-25@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Domegarde: Rent-cap trial due to end unless Parliament extends it
+DESCRIPTION:25 November 2026 (24 on one official page). ANIL and the Assemb
+ lée nationale bill no. 2039 give 25 November\; one Service-Public page sa
+ ys 24. The legal text must settle it. Until then the cap still applies whe
+ re it applies. See our post for where things stand. Source: https://www.an
+ il.org/aj-experimentation-encadrement-niveau-loyers-zones-tendues/ (Checke
+ d 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rent-cap trial due to end unless Parliament extends it
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-3-2026-12-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Domegarde: Business property tax (CFE): balance due
+DESCRIPTION:15 December 2026. In general the balance is due by 15 December 
+ inclusive\, or the next working day if that is a weekend or holiday. Check
+  whether you owe it: some furnished landlords are exempt. Source: https://
+ entreprendre.service-public.gouv.fr/vosdroits/F23547 (Checked 16 October 2
+ 026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Business property tax (CFE): balance due
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-4-2027-01-01@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Domegarde: Vacancy tax: a single tax starts with the 2027 tax year
+DESCRIPTION:1 January 2027. A home counts as vacant if it is empty on 1 Jan
+ uary. One tax replaces the two old ones: one year of vacancy in high-deman
+ d communes (17%\, then 34%)\, two years elsewhere if the council has intro
+ duced it. Years of vacancy before 2027 count. Source: https://www.service-
+ public.gouv.fr/particuliers/actualites/A18896 (Checked 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vacancy tax: a single tax starts with the 2027 tax year
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-5-2027-01-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Domegarde: IRL for Q4 2026 expected (expected)
+DESCRIPTION:Around mid-January 2027. INSEE publishes each quarter's IRL aro
+ und the middle of the following month (the Q4 2025 figure came out on 16 J
+ anuary 2026). Leases that name Q4 as their reference quarter can then be r
+ evised. Source: https://www.insee.fr/fr/statistiques/serie/001515333 (Chec
+ ked 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRL for Q4 2026 expected (expected)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-7-2027-04-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:Domegarde: IRL for Q1 2027 expected (expected)
+DESCRIPTION:Around mid-April 2027. The Q1 2026 figure was published on 16 A
+ pril 2026. Source: https://www.insee.fr/fr/statistiques/serie/001515333 (C
+ hecked 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRL for Q1 2027 expected (expected)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-8-2027-07-15@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:Domegarde: IRL for Q2 2027 expected (expected)
+DESCRIPTION:Around mid-July 2027. The Q2 2026 figure was published on 12 Ju
+ ly 2026. Source: https://www.insee.fr/fr/statistiques/serie/001515333 (Che
+ cked 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRL for Q2 2027 expected (expected)
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:domegarde-calendar-en-9-2027-07-31@domegarde.com
+DTSTAMP:20261016T120000Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+SUMMARY:Domegarde: Cap on rent increases at relet or renewal: due to end un
+ less renewed
+DESCRIPTION:31 July 2027. A decree of 20 July 2026 extends to 31 July 2027 
+ the cap on rent increases when a home is relet or a lease renewed in high-
+ demand (zone tendue) communes. Source: https://www.service-public.gouv.fr/
+ particuliers/actualites/A17566 (Checked 16 October 2026).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cap on rent increases at relet or renewal: due to end unless re
+ newed
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

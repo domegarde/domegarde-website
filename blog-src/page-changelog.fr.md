@@ -3,6 +3,12 @@ title: Nouveautés
 excerpt: Ce que nous avons mis en ligne, du plus récent au plus ancien : l'application (Produit) et ce site (Site). Les dates sont celles du jour de la mise en ligne.
 updated: 2026-10-16
 ---
+## 2026-10-16 | Deux outils gratuits pour les bailleurs | Site
+
+- Un calculateur de révision du loyer (IRL) : votre nouveau loyer à partir de l'indice de l'Insee, avec la formule affichée et votre date limite pour le demander. Rien de ce que vous saisissez ne quitte votre navigateur.
+- Un calendrier du bailleur pour la France : les dates qui comptent sur l'année à venir, chacune avec sa source, et un fichier pour votre propre agenda.
+- Le tableau de l'IRL derrière le calculateur a été vérifié sur les données de l'Insee et inclut désormais le T3 2026.
+
 ## 2026-10-16 | Un blog, une page « en bref » et cette liste | Site
 
 - Un blog bilingue : ce que nous construisons, et ce qui change dans les règles de la location en France, avec les sources.

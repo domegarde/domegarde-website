@@ -775,3 +775,38 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   border: 1px solid var(--border); background: var(--surface); color: var(--ink-soft); }
 .post-body .log-entry h2 { font-size: 1.35rem; margin: 2px 0 12px; }
 .post-body .log-entry ul { margin-bottom: 0; }
+
+
+/* -------------------- Free tools -------------------- */
+.tool-card { max-width: none; margin: 8px 0 28px; }
+.tool-err { color: #A3403A; font-size: 0.86rem; font-weight: 600; margin: 6px 0 0; }
+.tool-result { margin-top: 22px; }
+.tool-result:empty { display: none; }
+.tool-result-box { background: var(--bg); border: 1px solid var(--border); border-left: 4px solid var(--gold-deep); border-radius: var(--radius-card); padding: 20px 22px; }
+.tool-result-box.tool-warn { border-left-color: #A3403A; }
+.tool-result-box p { margin: 8px 0 0; max-width: 66ch; }
+.tool-big { font-size: 1.45rem; margin: 0 0 10px; }
+.post-body .tool-big { margin-top: 0; }
+.tool-line { margin: 4px 0 !important; }
+.tool-warn-text { color: #8A2F29; font-weight: 600; }
+.cal-list { list-style: none; padding: 0; margin: 24px 0 36px; }
+.cal-item { display: grid; grid-template-columns: 210px 1fr; gap: 10px 28px; padding: 22px 0; border-top: 1px solid var(--border); }
+.cal-item:first-child { border-top: 0; }
+.cal-date { font-weight: 600; display: block; margin-bottom: 8px; }
+.post-body .cal-body h2 { margin: 0 0 6px; font-size: 1.12rem; }
+.cal-body p { margin: 6px 0 0; max-width: 66ch; }
+.cal-body .form-note { margin-top: 10px; }
+.cal-item.cal-inforce .cal-date { color: var(--ink-soft); }
+.cal-table { width: 100%; max-width: 420px; border-collapse: collapse; font-size: 0.95rem; }
+.cal-table caption { text-align: left; font-weight: 600; padding: 0 0 8px; }
+.cal-table th, .cal-table td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); }
+.cal-table thead th { color: var(--ink-soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 8px 0 40px; }
+.tool-tile { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 26px; color: inherit; text-decoration: none; }
+.tool-tile:hover, .tool-tile:focus-visible { border-color: var(--gold-deep); }
+.post-body .tool-tile h2 { margin: 0 0 8px; font-size: 1.2rem; }
+.note-box a.btn-primary { color: #fff; text-decoration: none; }
+.tool-tile p { margin: 0 0 14px; color: var(--ink-soft); }
+.tool-open { color: var(--gold-text); font-weight: 600; }
+.tool-ics { margin-top: 8px; }
+@media (max-width: 640px) { .cal-item { grid-template-columns: 1fr; gap: 4px; } }
