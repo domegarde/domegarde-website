@@ -765,3 +765,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .post-sources a { color: var(--gold-text); font-weight: 600; text-decoration: underline; overflow-wrap: anywhere; }
 .src-host { color: var(--ink-soft); font-size: 0.82rem; margin-left: 6px; overflow-wrap: anywhere; }
 @media (max-width: 640px) { .post { padding-top: 48px; } .post-card { padding: 22px 22px; } }
+
+
+/* -------------------- What's new (changelog) -------------------- */
+.log-entry { padding: 30px 0; border-top: 1px solid var(--border); }
+.log-entry:first-child { border-top: 0; padding-top: 6px; }
+.log-meta { margin: 0 0 6px; font-size: 0.86rem; color: var(--ink-soft); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.log-tag { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 9px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--ink-soft); }
+.post-body .log-entry h2 { font-size: 1.35rem; margin: 2px 0 12px; }
+.post-body .log-entry ul { margin-bottom: 0; }

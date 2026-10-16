@@ -36,3 +36,15 @@ Then the post itself. Use `## Heading` for sections, `- ` for bullet lists, `**b
 While the website is private every page carries a `noindex` line. The blog builder writes it too (`NOINDEX = True` at the top of `tools/build-blog.py`); on launch day change it to `False` and rebuild.
 
 Run `python3 tools/build-blog.py` from the website folder. It rebuilds `blog.html`, `blog-fr.html`, every post page and the two RSS feeds. Then commit the new files as usual.
+
+## Two more pages written the same way
+
+- **Domegarde in brief** (`facts.html` / `en-bref.html`) comes from `page-facts.en.md` and `page-facts.fr.md`. Keep it in step with the pricing page and "What's coming": it is the page people and AI systems quote. Change `updated:` whenever you change it. The `features:` list at the top feeds the structured data.
+- **What's new** (`whats-new.html` / `nouveautes.html`) comes from `page-changelog.en.md` and `page-changelog.fr.md`. Add a new entry **at the top** of both files, in the same shape:
+
+      ## 2026-11-03 | Short title | Product
+      - One line on what changed for the landlord.
+
+  The tag is `Product` (French `Produit`) for the app or `Website` (`Site`) for this site. Use the day the change went live. Also change `updated:` at the top.
+
+Run `python3 tools/build-blog.py` after any change to these files.

@@ -6,10 +6,12 @@
 
 Reads  blog-src/<date>-<slug>.en.md  and  blog-src/<date>-<slug>.fr.md   (every post must exist in both languages)
 Writes blog.html, blog-fr.html, blog-<slug>.html, blog-<slug>-fr.html, feed.xml and feed-fr.xml next to index.html.
+Also reads blog-src/page-facts.<lang>.md and blog-src/page-changelog.<lang>.md and writes the "Domegarde in brief"
+pages (facts.html, en-bref.html) and the "What's new" pages (whats-new.html, nouveautes.html).
 The header and footer are copied from index.html / index-fr.html, so the blog always matches the rest of the site.
 Standard library only. See blog-src/README.md for how to write a post.
 """
-import argparse, datetime, glob, html, os, re, sys
+import argparse, datetime, glob, html, json, os, re, sys
 
 HOST = "https://www.domegarde.com"
 NOINDEX = True   # the whole site tells search engines to stay away until launch day; set to False when the site goes public
@@ -39,6 +41,7 @@ T = {
         empty="Nothing here yet.", months=["January","February","March","April","May","June","July","August","September","October","November","December"],
         datefmt=lambda d, m: f"{d.day} {m[d.month-1]} {d.year}",
         index="index.html", get_started="get-started.html", pricing="pricing.html", lang_label="EN",
+        updated="Last updated", home_crumb="Home",
     ),
     "fr": dict(
         blog="Blog", blog_title="Blog", all_posts="← Tous les articles", draft="Brouillon", read="Lire l'article",
@@ -53,8 +56,28 @@ T = {
         empty="Rien ici pour l'instant.", months=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
         datefmt=lambda d, m: ("1er" if d.day == 1 else str(d.day)) + f" {m[d.month-1]} {d.year}",
         index="index-fr.html", get_started="get-started-fr.html", pricing="pricing-fr.html", lang_label="FR",
+        updated="Dernière mise à jour", home_crumb="Accueil",
     ),
 }
+
+PAGES = {  # simple pages written as text files: key -> output file per language, eyebrow per language
+    "facts": {"files": {"en": "facts.html", "fr": "en-bref.html"}, "eyebrow": {"en": "Key facts", "fr": "L'essentiel"}},
+    "changelog": {"files": {"en": "whats-new.html", "fr": "nouveautes.html"}, "eyebrow": {"en": "Changelog", "fr": "Journal des nouveautés"}},
+}
+ORG_ID = HOST + "/#organization"
+def jsonld(*objs):
+    """Structured data for search engines and AI systems. A data block, not a script, so the site's security rules allow it."""
+    out = []
+    for o in objs:
+        txt = json.dumps(o, ensure_ascii=False, indent=2).replace("</", "<\\/")
+        out.append('<script type="application/ld+json">\n' + txt + "\n</script>")
+    return "\n".join(out) + "\n"
+def org_object(lang):
+    return {"@context": "https://schema.org", "@type": "Organization", "@id": ORG_ID, "name": "Domegarde", "url": HOST + "/",
+            "logo": HOST + "/assets/logo-icon.png", "areaServed": "FR", "knowsLanguage": ["fr", "en"],
+            "description": ("Software for independent landlords in France: which legal obligations apply, ranked by consequence, with the proof that satisfies each one."
+                            if lang == "en" else
+                            "Un logiciel pour les propriétaires bailleurs indépendants en France : quelles obligations légales s'appliquent, classées par conséquence, avec la preuve qui satisfait chacune.")}
 
 # ------------------------------------------------------------------ text helpers
 NB = " "
@@ -111,7 +134,7 @@ def markdown(body, lang):
             out.append("<p>" + inline(" ".join(lines), lang) + "</p>")
     return "\n".join(out)
 
-def parse_post(path):
+def parse_front(path):
     raw = open(path, encoding="utf-8").read()
     m = re.match(r"---\n(.*?)\n---\n(.*)\Z", raw, flags=re.S)
     assert m, f"{path}: missing front matter (--- ... ---)"
@@ -123,12 +146,23 @@ def parse_post(path):
             key, _, val = line.partition(":"); key = key.strip(); val = val.strip()
             if val: meta[key] = val
             else: meta[key] = []
+    meta["body"] = m.group(2)
+    return meta
+
+def parse_page(path):
+    meta = parse_front(path)
+    for req in ("title", "excerpt", "updated"):
+        assert meta.get(req), f"{path}: front matter needs '{req}'"
+    datetime.date.fromisoformat(meta["updated"])
+    return meta
+
+def parse_post(path):
+    meta = parse_front(path)
     for req in ("title", "section", "excerpt"):
         assert meta.get(req), f"{path}: front matter needs '{req}'"
     assert meta["section"] in SECTIONS, f"{path}: section must be one of {list(SECTIONS)}"
     meta["status"] = meta.get("status", "published")
     assert meta["status"] in ("draft", "published"), f"{path}: status must be draft or published"
-    meta["body"] = m.group(2)
     return meta
 
 # ------------------------------------------------------------------ page parts
@@ -138,12 +172,13 @@ def site_part(name, pattern):
     assert m, f"{name}: could not find {pattern}"
     return m.group(0)
 
-def header(lang, own_file, other_file):
+def header(lang, own_file, other_file, active_blog=True):
     h = site_part("index.html" if lang == "en" else "index-fr.html", r'<header class="site-header">.*?</header>')
     h = re.sub(r'<a href="(index(?:-fr)?\.html)" class="active" aria-current="page">', r'<a href="\1">', h)
     blog = "blog.html" if lang == "en" else "blog-fr.html"
     assert f'<a href="{blog}">' in h, "the header has no Blog link: add it to the site pages first"
-    h = h.replace(f'<a href="{blog}">', f'<a href="{blog}" class="active" aria-current="page">', 1)
+    if active_blog:
+        h = h.replace(f'<a href="{blog}">', f'<a href="{blog}" class="active" aria-current="page">', 1)
     sw = "index-fr.html" if lang == "en" else "index.html"
     assert h.count(f'<a href="{sw}" class="lang-switch"') == 1, "language switch not found in header"
     return h.replace(f'<a href="{sw}" class="lang-switch"', f'<a href="{other_file}" class="lang-switch"')
@@ -151,7 +186,7 @@ def header(lang, own_file, other_file):
 def footer(lang):
     return site_part("index.html" if lang == "en" else "index-fr.html", r'<footer class="site-footer">.*?</footer>')
 
-def head(lang, title, desc, own, en_file, fr_file, kind="website", published=None):
+def head(lang, title, desc, own, en_file, fr_file, kind="website", published=None, ld=""):
     t = T[lang]
     og_extra = f'\n<meta property="article:published_time" content="{published}">' if published else ""
     feed_en, feed_fr = "/feed.xml", "/feed-fr.xml"
@@ -187,7 +222,7 @@ def head(lang, title, desc, own, en_file, fr_file, kind="website", published=Non
 <meta name="theme-color" content="#F2F1EF">
 <noscript><style>.reveal{{opacity:1;transform:none}}</style></noscript>
 <link rel="stylesheet" href="/style.css">
-</head>
+{ld}</head>
 <body>
 <a class="skip-link" href="#main">{'Skip to main content' if lang == 'en' else 'Aller au contenu principal'}</a>
 
@@ -258,7 +293,15 @@ def render_post(slug, date, p, lang, other):
     author = p.get("author", t["team"])
     meta_line = f'<time datetime="{date}">{fmt_date(date, lang)}</time> · {t["by"]} {esc(author)} · {mins} {t["min_read"]}'
     if p.get("checked"): meta_line += f' · {t["checked"]}{NB if lang == "fr" else ""}: {fmt_date(p["checked"], lang)}'
-    page = head(lang, title, p["excerpt"], own, en_f, fr_f, kind="article", published=date)
+    ld = jsonld({"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "description": p["excerpt"],
+                 "inLanguage": lang, "datePublished": date, "dateModified": p.get("checked", date),
+                 "author": {"@type": "Organization", "@id": ORG_ID, "name": "Domegarde"}, "publisher": {"@id": ORG_ID},
+                 "mainEntityOfPage": f"{HOST}/{own}", "image": HOST + "/assets/social-card.png"},
+                {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": t["home_crumb"], "item": HOST + "/" + ("" if lang == "en" else "index-fr.html")},
+                    {"@type": "ListItem", "position": 2, "name": t["blog"], "item": f"{HOST}/{blog_file(lang)}"},
+                    {"@type": "ListItem", "position": 3, "name": p["title"], "item": f"{HOST}/{own}"}]})
+    page = head(lang, title, p["excerpt"], own, en_f, fr_f, kind="article", published=date, ld=ld)
     page += header(lang, own, post_file(slug, other)) + "\n\n<main id=\"main\">\n"
     page += f'''  <article class="post">
     <div class="wrap post-wrap">
@@ -321,6 +364,56 @@ def render_index(posts, lang, other):
     page += "\n" + cta(lang) + "</main>\n\n" + footer(lang) + '\n\n<script src="/main.js"></script>\n</body>\n</html>\n'
     return page
 
+def changelog_html(body, lang):
+    """Entries are '## 2026-10-14 | Title | Tag' followed by a short text or bullet list, newest first."""
+    out = []
+    for e in [x for x in re.split(r"(?m)^## ", body.strip()) if x.strip()]:
+        head_line, _, rest = e.partition("\n")
+        m = re.match(r"(\d{4}-\d{2}-\d{2}) \| (.+?) \| (.+)$", head_line.strip())
+        assert m, f"changelog entry heading must look like '## 2026-10-14 | Title | Tag', got: {head_line!r}"
+        date, title, tag = m.groups(); datetime.date.fromisoformat(date)
+        out.append(f'''<article class="log-entry" id="d-{date}-{slugify(title)}">
+<p class="log-meta"><time datetime="{date}">{fmt_date(date, lang)}</time> <span class="log-tag">{esc(tag)}</span></p>
+<h2>{inline(title, lang)}</h2>
+{markdown(rest, lang)}
+</article>''')
+    return "\n".join(out)
+
+def render_page(key, p, lang, other):
+    t = T[lang]; files = PAGES[key]["files"]; own = files[lang]
+    title = fr_typo(p["title"]) if lang == "fr" else p["title"]
+    body = changelog_html(p["body"], lang) if key == "changelog" else markdown(p["body"], lang)
+    ld_objs = []
+    if key == "facts":
+        ld_objs += [org_object(lang), {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Domegarde", "url": HOST + "/",
+                    "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "inLanguage": ["fr", "en"],
+                    "description": p["excerpt"], "provider": {"@id": ORG_ID}, "featureList": p.get("features", [])}]
+    ld_objs.append({"@context": "https://schema.org", "@type": "WebPage", "name": p["title"], "description": p["excerpt"], "inLanguage": lang,
+                    "url": f"{HOST}/{own}", "dateModified": p["updated"], "isPartOf": {"@id": ORG_ID}})
+    page = head(lang, title, p["excerpt"], own, files["en"], files["fr"], ld=jsonld(*ld_objs))
+    page += header(lang, own, files[other], active_blog=False) + "\n\n<main id=\"main\">\n"
+    page += f'''  <section class="hero" style="padding-bottom: 24px;">
+    <div class="wrap" style="max-width: 760px;">
+      <div class="eyebrow">{esc(PAGES[key]["eyebrow"][lang])}</div>
+      <h1 style="font-size: clamp(2.2rem, 4.2vw, 3.3rem);">{esc(title)}</h1>
+      <p class="hero-sub" style="max-width: 62ch; font-size: 1.15rem;">{inline(p["excerpt"], lang)}</p>
+      <p class="post-meta" style="margin: 18px 0 0;">{t["updated"]}{NB if lang == "fr" else ""}: <time datetime="{p["updated"]}">{fmt_date(p["updated"], lang)}</time></p>
+    </div>
+  </section>
+  <section style="padding-top: 0;">
+    <div class="wrap post-wrap">
+      <div class="post-body">
+{body}
+      </div>
+    </div>
+  </section>
+
+{cta(lang)}</main>
+
+'''
+    page += footer(lang) + '\n\n<script src="/main.js"></script>\n</body>\n</html>\n'
+    return page
+
 def rfc822(iso):
     d = datetime.datetime.fromisoformat(iso + "T09:00:00+00:00")
     return d.strftime("%a, %d %b %Y %H:%M:%S +0000")
@@ -357,7 +450,8 @@ def render_sitemap(posts):
     pairs = [("index.html","index-fr.html"),("about.html","about-fr.html"),("pricing.html","pricing-fr.html"),
              ("get-started.html","get-started-fr.html"),("terms.html","terms-fr.html"),("privacy.html","privacy-fr.html"),
              ("legal-notice.html","mentions-legales.html"),("whats-coming.html","ce-qui-arrive.html"),
-             ("expat-landlords.html","proprietaires-non-residents.html"),("blog.html","blog-fr.html")]
+             ("expat-landlords.html","proprietaires-non-residents.html"),("blog.html","blog-fr.html"),
+             ("facts.html","en-bref.html"),("whats-new.html","nouveautes.html")]
     for slug, date, by_lang in posts:
         if by_lang["en"]["status"] == "published" and by_lang["fr"]["status"] == "published":
             pairs.append((post_file(slug, "en"), post_file(slug, "fr")))
@@ -377,7 +471,7 @@ def main():
     found = {}
     for path in sorted(glob.glob(os.path.join(ROOT, "blog-src", "*.md"))):
         name = os.path.basename(path)
-        if name.lower() == "readme.md": continue
+        if name.lower() == "readme.md" or name.startswith("page-"): continue
         m = re.match(r"^(\d{4}-\d{2}-\d{2})-(.+)\.(en|fr)\.md$", name)
         assert m, f"blog-src/{name}: name must look like 2026-10-16-my-slug.en.md (or .fr.md)"
         date, slug, lang = m.groups()
@@ -396,10 +490,18 @@ def main():
         w("feed.xml" if lang == "en" else "feed-fr.xml", render_feed(posts, lang))
         for slug, date, by_lang in posts:
             w(post_file(slug, lang), render_post(slug, date, by_lang[lang], lang, other))
+    for key in PAGES:
+        srcs = {}
+        for lang in ("en", "fr"):
+            path = os.path.join(ROOT, "blog-src", f"page-{key}.{lang}.md")
+            assert os.path.exists(path), f"blog-src/page-{key}.{lang}.md is missing (every page needs both languages)"
+            srcs[lang] = parse_page(path)
+        for lang, other in (("en", "fr"), ("fr", "en")):
+            w(PAGES[key]["files"][lang], render_page(key, srcs[lang], lang, other))
     if args.sitemap_out:
         open(args.sitemap_out, "w", encoding="utf-8").write(render_sitemap(posts))
     pub = [f"{HOST}/{post_file(s, l)}" for s, d, b in posts if b['en']['status'] == 'published' for l in ('en', 'fr')]
-    print(f"blog: {len(posts)} post(s), {len(wrote)} files written; {len(pub)//2} published")
+    print(f"blog: {len(posts)} post(s) and {len(PAGES)} pages in two languages; {len(wrote)} files written; {len(pub)//2} published")
     for n in wrote: print("  ", n)
 
 if __name__ == "__main__":
