@@ -69,6 +69,7 @@ PAGES = {  # simple pages written as text files: key -> output file per language
     "changelog": {"files": {"en": "whats-new.html", "fr": "nouveautes.html"}, "eyebrow": {"en": "Changelog", "fr": "Journal des nouveautés"}},
     "tools": {"files": {"en": "tools.html", "fr": "outils.html"}, "eyebrow": {"en": "Free tools", "fr": "Outils gratuits"}},
     "irl": {"files": {"en": "irl-calculator.html", "fr": "calculateur-irl.html"}, "eyebrow": {"en": "Free tool", "fr": "Outil gratuit"}, "scripts": ["/irl.js"]},
+    "deposit": {"files": {"en": "deposit-calculator.html", "fr": "calculateur-depot-garantie.html"}, "eyebrow": {"en": "Free tool", "fr": "Outil gratuit"}, "scripts": ["/deposit.js"]},
     "calendar": {"files": {"en": "landlord-calendar.html", "fr": "calendrier-bailleur.html"}, "eyebrow": {"en": "Free tool", "fr": "Outil gratuit"}},
 }
 ORG_ID = HOST + "/#organization"
@@ -460,7 +461,7 @@ def render_sitemap(posts):
              ("legal-notice.html","mentions-legales.html"),("whats-coming.html","ce-qui-arrive.html"),
              ("expat-landlords.html","proprietaires-non-residents.html"),("blog.html","blog-fr.html"),
              ("facts.html","en-bref.html"),("whats-new.html","nouveautes.html"),
-             ("tools.html","outils.html"),("irl-calculator.html","calculateur-irl.html"),("landlord-calendar.html","calendrier-bailleur.html")]
+             ("tools.html","outils.html"),("irl-calculator.html","calculateur-irl.html"),("deposit-calculator.html","calculateur-depot-garantie.html"),("landlord-calendar.html","calendrier-bailleur.html")]
     for slug, date, by_lang in posts:
         if by_lang["en"]["status"] == "published" and by_lang["fr"]["status"] == "published":
             pairs.append((post_file(slug, "en"), post_file(slug, "fr")))

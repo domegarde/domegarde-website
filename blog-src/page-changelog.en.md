@@ -3,6 +3,11 @@ title: What's new
 excerpt: What we have shipped, newest first: the app (Product) and this website (Website). Dates are the days the change went live.
 updated: 2026-10-16
 ---
+## 2026-10-16 | A security deposit calculator | Website
+
+- A third free tool: the last day to return a tenant's deposit (one or two months from the keys), and the 10% monthly late penalty. Rules from Service-Public, checked 16 October 2026; nothing you type leaves your browser.
+- The landlord's calendar now links to it from the deposit entry.
+
 ## 2026-10-16 | Two free tools for landlords | Website
 
 - A rent revision (IRL) calculator: your new rent from the INSEE index, with the formula shown and your deadline to claim it. Nothing you type leaves your browser.

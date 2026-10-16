@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security deposit calculator — Domegarde</title>
+<meta name="description" content="Work out the last day to return a tenant&#x27;s security deposit, and what a late return costs, from the day the keys were handed back. Free, no account, and nothing you type leaves your browser.">
+<link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.domegarde.com/deposit-calculator.html">
+<link rel="alternate" hreflang="en" href="https://www.domegarde.com/deposit-calculator.html">
+<link rel="alternate" hreflang="fr" href="https://www.domegarde.com/calculateur-depot-garantie.html">
+<link rel="alternate" hreflang="x-default" href="https://www.domegarde.com/calculateur-depot-garantie.html">
+<link rel="alternate" type="application/rss+xml" title="Domegarde blog" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Domegarde">
+<meta property="og:title" content="Security deposit calculator — Domegarde">
+<meta property="og:description" content="Work out the last day to return a tenant&#x27;s security deposit, and what a late return costs, from the day the keys were handed back. Free, no account, and nothing you type leaves your browser.">
+<meta property="og:url" content="https://www.domegarde.com/deposit-calculator.html">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:image" content="https://www.domegarde.com/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Domegarde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F1EF">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Security deposit calculator",
+  "description": "Work out the last day to return a tenant's security deposit, and what a late return costs, from the day the keys were handed back. Free, no account, and nothing you type leaves your browser.",
+  "inLanguage": "en",
+  "url": "https://www.domegarde.com/deposit-calculator.html",
+  "dateModified": "2026-10-16",
+  "isPartOf": {
+    "@id": "https://www.domegarde.com/#organization"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="/assets/logo-icon.png" alt="" class="logo-icon">
+      Domegarde
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="get-started.html" class="nav-mobile">Get started</a>
+      <a href="https://domegarde-app.vercel.app/login" class="nav-mobile">Log in</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://domegarde-app.vercel.app/login" class="login-link">Log in</a>
+      <a href="get-started.html" class="btn btn-primary">Request early access</a>
+      <a href="calculateur-depot-garantie.html" class="lang-switch" lang="fr" hreflang="fr" aria-label="FR, Français">FR</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom: 24px;">
+    <div class="wrap" style="max-width: 760px;">
+      <div class="eyebrow">Free tool</div>
+      <h1 style="font-size: clamp(2.2rem, 4.2vw, 3.3rem);">Security deposit calculator</h1>
+      <p class="hero-sub" style="max-width: 62ch; font-size: 1.15rem;">Work out the last day to return a tenant&#x27;s security deposit, and what a late return costs, from the day the keys were handed back. Free, no account, and nothing you type leaves your browser.</p>
+      <p class="post-meta" style="margin: 18px 0 0;">Last updated: <time datetime="2026-10-16">16 October 2026</time></p>
+    </div>
+  </section>
+  <section style="padding-top: 0;">
+    <div class="wrap post-wrap">
+      <div class="post-body">
+<div class="form-card tool-card">
+<form id="dep-form" novalidate>
+<div class="form-field"><label for="dep-keys">Date the tenant handed back the keys</label><input type="date" id="dep-keys" name="keys" aria-describedby="dep-keys-hint dep-keys-err"><p class="form-note" id="dep-keys-hint">In person or by registered letter. The deadline runs from this day.</p><p class="tool-err" id="dep-keys-err" role="alert" hidden></p></div>
+<div class="form-field"><label for="dep-inv">Exit inventory</label><select id="dep-inv" name="inventory" aria-describedby="dep-inv-hint dep-inv-err"><option value="">Choose…</option><option value="match">Matches the entry inventory</option><option value="differs">Differs from the entry inventory</option></select><p class="form-note" id="dep-inv-hint">Compared with the entry inventory.</p><p class="tool-err" id="dep-inv-err" role="alert" hidden></p></div>
+<div class="form-row">
+<div class="form-field"><label for="dep-rent">Monthly rent, excluding charges</label><input type="text" id="dep-rent" name="rent" inputmode="decimal" autocomplete="off" aria-describedby="dep-rent-hint dep-rent-err"><p class="form-note" id="dep-rent-hint">In euros, for example 600 or 600.50. Used for the late penalty.</p><p class="tool-err" id="dep-rent-err" role="alert" hidden></p></div>
+<div class="form-field"><label for="dep-check">Date the deposit is or was returned</label><input type="date" id="dep-check" name="check" aria-describedby="dep-check-hint dep-check-err"><p class="form-note" id="dep-check-hint">Optional. Leave empty to use today.</p><p class="tool-err" id="dep-check-err" role="alert" hidden></p></div>
+</div>
+<div class="form-check"><input type="checkbox" id="dep-noaddr" name="noaddr"><label for="dep-noaddr">The tenant has not given a new address</label></div>
+<button type="submit" class="btn btn-primary" style="width:100%;">Work out the deadline and any penalty</button>
+</form>
+<div id="dep-result" class="tool-result" role="status" aria-live="polite"></div>
+<noscript><p class="form-note">This calculator needs JavaScript. The rules are explained on this page.</p></noscript>
+</div>
+<p><strong>Rules checked on 16 October 2026</strong> against Service-Public&#x27;s page on the security deposit (last verified by Service-Public on 9 June 2026).</p>
+<h2 id="how-the-deadline-works">How the deadline works</h2>
+<ul><li>You must return the deposit <strong>within one month</strong> of the tenant handing back the keys if the exit inventory matches the entry inventory, and <strong>within two months</strong> if it does not.</li><li>The clock starts the day the tenant gives you the keys, in person or by registered letter with acknowledgement of receipt.</li><li>The amount you return may be lower than the deposit, because of justified deductions.</li></ul>
+<h2 id="what-a-late-return-costs">What a late return costs</h2>
+<ul><li>The amount you owe is increased by <strong>10% of the monthly rent, excluding charges, for each month started late</strong>.</li><li>To recover a late deposit, the tenant has to send a formal notice (<em>mise en demeure</em>).</li><li>The penalty does not apply when the delay is caused by the tenant not telling you their new address.</li></ul>
+<h2 id="what-you-may-keep">What you may keep</h2>
+<ul><li>Amounts the tenant owes: unpaid rent or charges, the cost of damage or of repairs not done. You must be able to justify them with documents such as the two inventories, quotes or invoices, or a letter claiming unpaid rent that went unanswered.</li><li>In a building with shared charges you may keep a provision of up to 20% of the deposit until the building&#x27;s annual accounts are approved. You then settle within a month.</li></ul>
+<h2 id="what-this-calculator-does-not-cover">What this calculator does not cover</h2>
+<ul><li>It follows the general rule for a main-residence lease. Other lease types, or a missing entry or exit inventory, can change the rules.</li><li>It counts calendar days and does not move a deadline for weekends or public holidays.</li><li>It does not read your lease or decide what you may deduct. It gives information, not legal advice.</li></ul>
+<h2 id="in-domegarde">In Domegarde</h2>
+<p>Domegarde&#x27;s checklist includes returning the deposit on time. The full end-of-tenancy process is planned, not live yet: see <a href="whats-coming.html">What&#x27;s coming</a>. Domegarde is in early access, and this calculator stays free either way.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F31269" target="_blank" rel="noopener">Service-Public: security deposit in a residential lease</a>: the one- and two-month deadlines, the 10% penalty, the formal notice, the new-address exception, the deductions and the 20% provision.</li><li>Related: the <a href="landlord-calendar.html">landlord&#x27;s calendar</a> and the <a href="irl-calculator.html">rent revision calculator</a>.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <div class="eyebrow">Ready when you are</div>
+          <h2>Ready to take control of your portfolio?</h2>
+        </div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="get-started.html" class="btn btn-gold btn-lg">Request early access</a>
+          <a href="pricing.html" class="btn btn-ghost-light btn-lg">Compare plans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="/assets/logo-icon.png" alt="" class="logo-icon">
+          Domegarde
+        </div>
+        <p>Never miss a rule, a deadline or a rent rise. For independent landlords in France. Built in Paris.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Product</p>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="whats-coming.html">What's coming</a>
+        <a href="whats-new.html">What's new</a>
+        <a href="tools.html">Free tools</a>
+        <a href="expat-landlords.html">Landlords abroad</a>
+        <a href="get-started.html">Get started</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Company</p>
+        <a href="about.html">About</a>
+        <a href="facts.html">Domegarde in brief</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Legal</p>
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="terms.html">Terms of service</a>
+        <a href="privacy.html">Privacy policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Domegarde. Paris, France.</span>
+      <span>Made for landlords who'd rather not think about spreadsheets.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script src="/deposit.js"></script>
+</body>
+</html>

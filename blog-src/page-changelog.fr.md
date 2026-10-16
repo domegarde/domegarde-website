@@ -3,6 +3,11 @@ title: Nouveautés
 excerpt: Ce que nous avons mis en ligne, du plus récent au plus ancien : l'application (Produit) et ce site (Site). Les dates sont celles du jour de la mise en ligne.
 updated: 2026-10-16
 ---
+## 2026-10-16 | Un calculateur du dépôt de garantie | Site
+
+- Un troisième outil gratuit : le dernier jour pour rendre le dépôt de garantie (un ou deux mois à partir des clés) et la pénalité de retard de 10 % par mois. Règles de Service-Public, vérifiées le 16 octobre 2026 ; rien de ce que vous saisissez ne quitte votre navigateur.
+- Le calendrier du bailleur y renvoie désormais depuis l'entrée sur le dépôt.
+
 ## 2026-10-16 | Deux outils gratuits pour les bailleurs | Site
 
 - Un calculateur de révision du loyer (IRL) : votre nouveau loyer à partir de l'indice de l'Insee, avec la formule affichée et votre date limite pour le demander. Rien de ce que vous saisissez ne quitte votre navigateur.

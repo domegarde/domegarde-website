@@ -7,7 +7,7 @@ updated: 2026-10-16
 
 ## Comment nous les concevons
 
-- **Gratuits, sans compte.** Le calculateur fonctionne dans votre navigateur. Nous ne recevons pas ce que vous saisissez.
+- **Gratuits, sans compte.** Les calculateurs fonctionnent dans votre navigateur. Nous ne recevons pas ce que vous saisissez.
 - **Sourcés.** Chaque chiffre et chaque date indique sa source et le jour de notre dernière vérification.
 - **Honnêtes sur leurs limites.** Chaque outil dit ce qu'il ne couvre pas. Ils donnent de l'information, pas un conseil juridique.
 

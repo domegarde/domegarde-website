@@ -50,6 +50,40 @@ def irl_form(lang):
 <noscript><p class="form-note">{esc(u["noscript"])}</p></noscript>
 </div>'''
 
+DEPUI = {
+    "en": dict(keys="Date the tenant handed back the keys", keys_hint="In person or by registered letter. The deadline runs from this day.",
+               inv="Exit inventory", inv_hint="Compared with the entry inventory.", inv_pick="Choose…", inv_match="Matches the entry inventory", inv_differs="Differs from the entry inventory",
+               rent="Monthly rent, excluding charges", rent_hint="In euros, for example 600 or 600.50. Used for the late penalty.",
+               check="Date the deposit is or was returned", check_hint="Optional. Leave empty to use today.",
+               noaddr="The tenant has not given a new address", go="Work out the deadline and any penalty",
+               noscript="This calculator needs JavaScript. The rules are explained on this page."),
+    "fr": dict(keys="Date de remise des clés par le locataire", keys_hint="En main propre ou par lettre recommandée. Le délai court à partir de ce jour.",
+               inv="État des lieux de sortie", inv_hint="Comparé à l'état des lieux d'entrée.", inv_pick="Choisir…", inv_match="Conforme à l'état des lieux d'entrée", inv_differs="Différent de l'état des lieux d'entrée",
+               rent="Loyer mensuel, hors charges", rent_hint="En euros, par exemple 600 ou 600,50. Sert à calculer la pénalité de retard.",
+               check="Date à laquelle le dépôt est ou a été rendu", check_hint="Facultatif. Laissez vide pour utiliser aujourd'hui.",
+               noaddr="Le locataire n'a pas donné sa nouvelle adresse", go="Calculer le délai et la pénalité éventuelle",
+               noscript="Ce calculateur a besoin de JavaScript. Les règles sont expliquées sur cette page."),
+}
+def deposit_form(lang):
+    u = DEPUI[lang]
+    def field(fid, label, hint, control):
+        return (f'<div class="form-field"><label for="{fid}">{esc(label)}</label>{control}'
+                f'<p class="form-note" id="{fid}-hint">{esc(hint)}</p><p class="tool-err" id="{fid}-err" role="alert" hidden></p></div>')
+    return f'''<div class="form-card tool-card">
+<form id="dep-form" novalidate>
+{field("dep-keys", u["keys"], u["keys_hint"], '<input type="date" id="dep-keys" name="keys" aria-describedby="dep-keys-hint dep-keys-err">')}
+{field("dep-inv", u["inv"], u["inv_hint"], f'<select id="dep-inv" name="inventory" aria-describedby="dep-inv-hint dep-inv-err"><option value="">{esc(u["inv_pick"])}</option><option value="match">{esc(u["inv_match"])}</option><option value="differs">{esc(u["inv_differs"])}</option></select>')}
+<div class="form-row">
+{field("dep-rent", u["rent"], u["rent_hint"], '<input type="text" id="dep-rent" name="rent" inputmode="decimal" autocomplete="off" aria-describedby="dep-rent-hint dep-rent-err">')}
+{field("dep-check", u["check"], u["check_hint"], '<input type="date" id="dep-check" name="check" aria-describedby="dep-check-hint dep-check-err">')}
+</div>
+<div class="form-check"><input type="checkbox" id="dep-noaddr" name="noaddr"><label for="dep-noaddr">{esc(u["noaddr"])}</label></div>
+<button type="submit" class="btn btn-primary" style="width:100%;">{esc(u["go"])}</button>
+</form>
+<div id="dep-result" class="tool-result" role="status" aria-live="polite"></div>
+<noscript><p class="form-note">{esc(u["noscript"])}</p></noscript>
+</div>'''
+
 def irl_table(lang):
     u = UI[lang]
     series = json.load(open(os.path.join(ROOT, "tools", "irl-series.json")))
@@ -111,7 +145,7 @@ CAL = [
          title=("IRL for Q4 2026 expected", "IRL du T4 2026 attendu"),
          what=("INSEE publishes each quarter's IRL around the middle of the following month (the Q4 2025 figure came out on 16 January 2026). Leases that name Q4 as their reference quarter can then be revised.",
                "L'Insee publie l'IRL de chaque trimestre vers la mi-mois suivant (celui du T4 2025 est paru le 16 janvier 2026). Les baux dont le trimestre de référence est le T4 peuvent alors être révisés."),
-         who=("Landlords revising rent", "Les bailleurs qui révisent le loyer"), tool=True),
+         who=("Landlords revising rent", "Les bailleurs qui révisent le loyer"), tool="irl"),
     dict(k="ir", iso=None, kind="month",
          when=("April 2027", "Avril 2027"),
          title=("Online income tax return opens", "Ouverture de la déclaration de revenus en ligne"),
@@ -122,12 +156,12 @@ CAL = [
          when=("Around mid-April 2027", "Vers la mi-avril 2027"),
          title=("IRL for Q1 2027 expected", "IRL du T1 2027 attendu"),
          what=("The Q1 2026 figure was published on 16 April 2026.", "L'IRL du T1 2026 a été publié le 16 avril 2026."),
-         who=("Landlords revising rent", "Les bailleurs qui révisent le loyer"), tool=True),
+         who=("Landlords revising rent", "Les bailleurs qui révisent le loyer"), tool="irl"),
     dict(k="irl", iso="2027-07-15", kind="expected",
          when=("Around mid-July 2027", "Vers la mi-juillet 2027"),
          title=("IRL for Q2 2027 expected", "IRL du T2 2027 attendu"),
          what=("The Q2 2026 figure was published on 12 July 2026.", "L'IRL du T2 2026 a été publié le 12 juillet 2026."),
-         who=("Landlords revising rent", "Les bailleurs qui révisent le loyer"), tool=True),
+         who=("Landlords revising rent", "Les bailleurs qui révisent le loyer"), tool="irl"),
     dict(k="relet", iso="2027-07-31", kind="fixed",
          when=("31 July 2027", "31 juillet 2027"),
          title=("Cap on rent increases at relet or renewal: due to end unless renewed", "Plafonnement des hausses à la relocation ou au renouvellement : fin prévue sauf reconduction"),
@@ -139,13 +173,13 @@ CAL = [
          title=("Yearly rent revision", "Révision annuelle du loyer"),
          what=("If the lease has an indexation clause you have one year from the revision date to ask. The increase counts only from your request, and it is lost for that year if you do not ask. Not allowed for a home rated F or G.",
                "Si le bail contient une clause d'indexation, vous avez un an à partir de la date de révision pour la demander. La hausse ne compte qu'à partir de votre demande, et elle est perdue pour l'année si vous ne la demandez pas. Impossible pour un logement classé F ou G."),
-         who=("Landlords with an indexation clause", "Les bailleurs dont le bail a une clause d'indexation"), tool=True),
+         who=("Landlords with an indexation clause", "Les bailleurs dont le bail a une clause d'indexation"), tool="irl"),
     dict(k="dep", iso=None, kind="yearly",
          when=("After the tenant leaves", "Après le départ du locataire"),
          title=("Return the security deposit", "Rendre le dépôt de garantie"),
          what=("One month after the keys are handed back if the exit inventory matches the entry inventory, two months if it does not. Each month started late adds 10% of the monthly rent, excluding charges.",
                "Un mois après la remise des clés si l'état des lieux de sortie est conforme à celui d'entrée, deux mois sinon. Chaque mois de retard commencé ajoute 10 % du loyer mensuel hors charges."),
-         who=("Every landlord at the end of a lease", "Tout bailleur à la fin d'un bail")),
+         who=("Every landlord at the end of a lease", "Tout bailleur à la fin d'un bail"), tool="deposit"),
     dict(k="occ", iso=None, kind="yearly",
          when=("When occupancy changes", "Quand l'occupation change"),
          title=("Property occupancy declaration", "Déclaration d'occupation des biens"),
@@ -157,6 +191,7 @@ KIND = {"en": {"inforce": "In force", "fixed": "Fixed date", "expected": "Expect
         "fr": {"inforce": "En vigueur", "fixed": "Date fixe", "expected": "Attendu", "month": "Mois seul", "yearly": "Récurrent"}}
 CALUI = {"en": dict(who="Who it concerns", src="Source", checked="Checked", tool="Calculate it", read="Read the post"),
          "fr": dict(who="Qui est concerné", src="Source", checked="Vérifié le", tool="Le calculer", read="Lire l'article")}
+TOOL_PAGE = {"irl": {"en": "irl-calculator.html", "fr": "calculateur-irl.html"}, "deposit": {"en": "deposit-calculator.html", "fr": "calculateur-depot-garantie.html"}}
 def post_url(slug, lang): return f"{slug}.html" if lang == "en" else f"{slug}-fr.html"
 
 def calendar_html(lang):
@@ -165,7 +200,7 @@ def calendar_html(lang):
         label, label_fr, url = SRC[e["k"]]
         src = (label, label_fr)[i]
         links = f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(src)}</a>'
-        if e.get("tool"): links += f' · <a href="{"irl-calculator.html" if lang == "en" else "calculateur-irl.html"}">{u["tool"]}</a>'
+        if e.get("tool"): links += f' · <a href="{TOOL_PAGE[e["tool"]][lang]}">{u["tool"]}</a>'
         if e.get("post"): links += f' · <a href="{post_url("blog-rent-caps-trial-ending", lang)}">{u["read"]}</a>'
         when = e["when"][i]
         items.append(f'''<li class="cal-item cal-{e["kind"]}"><div class="cal-when"><span class="cal-date">{esc(when)}</span> <span class="log-tag">{KIND[lang][e["kind"]]}</span></div>
@@ -212,14 +247,16 @@ def ics_links(lang):
 # ------------------------------------------------------------------ the hub
 def tool_list(lang):
     items = {"en": [("irl-calculator.html", "Rent revision (IRL) calculator", "Work out your new rent from the INSEE index, with the formula shown and your deadline to claim it."),
+                    ("deposit-calculator.html", "Security deposit calculator", "When the deposit must be returned and what a late return costs, from the day the keys were handed back."),
                     ("landlord-calendar.html", "Landlord's calendar", "The dates that matter to a French landlord over the next year, each with its source, and a file for your own calendar.")],
              "fr": [("calculateur-irl.html", "Calculateur de révision du loyer (IRL)", "Calculez votre nouveau loyer avec l'indice de l'Insee, avec la formule affichée et votre date limite pour le demander."),
+                    ("calculateur-depot-garantie.html", "Calculateur du dépôt de garantie", "Quand le dépôt doit être rendu et ce que coûte un retard, à partir du jour de la remise des clés."),
                     ("calendrier-bailleur.html", "Calendrier du bailleur", "Les dates qui comptent pour un bailleur en France sur l'année à venir, chacune avec sa source, et un fichier pour votre propre agenda.")]}[lang]
     cta = {"en": "Open the tool", "fr": "Ouvrir l'outil"}[lang]
     return '<div class="tool-grid">' + "".join(f'<a class="tool-tile" href="{f}"><h2>{esc(t)}</h2><p>{esc(d)}</p><span class="tool-open">{cta} →</span></a>' for f, t, d in items) + "</div>"
 
 def fill(body, key, lang):
-    reps = {"{{irl-form}}": irl_form, "{{irl-table}}": irl_table, "{{calendar}}": calendar_html, "{{ics-links}}": ics_links, "{{tool-list}}": tool_list}
+    reps = {"{{irl-form}}": irl_form, "{{deposit-form}}": deposit_form, "{{irl-table}}": irl_table, "{{calendar}}": calendar_html, "{{ics-links}}": ics_links, "{{tool-list}}": tool_list}
     for token, fn in reps.items():
         body = body.replace(f"<p>{token}</p>", fn(lang))
     assert "{{" not in body, "an unreplaced {{placeholder}} is left in the page"

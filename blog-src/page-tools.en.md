@@ -7,7 +7,7 @@ updated: 2026-10-16
 
 ## How we make them
 
-- **Free, with no account.** The calculator runs in your browser. We do not receive what you type.
+- **Free, with no account.** The calculators run in your browser. We do not receive what you type.
 - **Sourced.** Every figure and date carries its source and the day we last checked it.
 - **Honest about limits.** Each tool says what it does not cover. They give information, not legal advice.
 
