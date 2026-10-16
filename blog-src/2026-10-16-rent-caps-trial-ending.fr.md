@@ -6,7 +6,7 @@ author: L'équipe Domegarde
 checked: 2026-10-16
 excerpt: L'encadrement des loyers est une expérimentation qui doit s'arrêter fin novembre 2026, sauf décision du Parlement. Où en est le dossier au 16 octobre, ce que l'on sait, et ce que l'on ignore.
 review:
-- Date exacte de fin : l'ANIL et l'Assemblée nationale (proposition de loi n° 2039) indiquent le 25 novembre 2026 ; d'autres sources donnent le 23 ou le 24. Légifrance n'était pas accessible le 16 octobre : confirmer dans le texte de loi (loi ELAN, article 140, modifié par la loi 3DS) avant de publier.
+- Date exacte de fin : l'ANIL et l'Assemblée nationale (proposition de loi n° 2039) indiquent le 25 novembre 2026 ; d'autres sources donnent le 23 ou le 24, dont une page de Service-Public (loyers de référence d'Est Ensemble, « jusqu'au 24 novembre 2026 »). Légifrance n'était pas accessible le 16 octobre : confirmer dans le texte de loi (loi ELAN, article 140, modifié par la loi 3DS) avant de publier.
 - Le texte n° 48 de la commission du Sénat (14 octobre) n'est rapporté que par un cabinet d'avocats. La page du Sénat pour la proposition de loi n° 168 n'indique que son dépôt le 27 novembre 2025. Revérifier le site du Sénat juste avant publication, et mettre l'article à jour.
 - Baux déjà signés au moment où l'expérimentation s'arrête : nous ne savons pas. La liste de conformité de l'application affirmait que « les baux en cours conservent leur loyer dans tous les cas » ; cette phrase a été retirée faute de source.
 - La liste de conformité de l'application indiquait le 24 novembre 2026 ; elle indique désormais le 25 novembre (corrigé le 16 octobre, une fois la correction mise en ligne).
@@ -23,7 +23,7 @@ L'encadrement des loyers, appliqué aujourd'hui à Paris et dans d'autres territ
 ## Ce que l'on sait
 
 - C'est une expérimentation, pas une loi permanente : la loi ELAN (23 novembre 2018) l'a créée, et la loi 3DS (21 février 2022) l'a prolongée.
-- Elle doit se terminer le 25 novembre 2026. C'est la date indiquée par l'ANIL et dans l'exposé des motifs d'une proposition de loi déposée à l'Assemblée nationale (n° 2039). Quelques sources donnent le 23 ou le 24.
+- Elle doit se terminer le 25 novembre 2026. C'est la date indiquée par l'ANIL et dans l'exposé des motifs d'une proposition de loi déposée à l'Assemblée nationale (n° 2039). Quelques sources, dont une page de Service-Public, donnent le 23 ou le 24.
 - Elle ne s'applique que dans les territoires qui l'ont demandée. Selon l'ANIL, ce sont Paris, Lille, Plaine Commune, Lyon et Villeurbanne, Est Ensemble, Montpellier, Bordeaux, le Pays basque et Grenoble-Alpes Métropole. Les loyers de référence sont fixés chaque année par arrêté du préfet.
 
 ## Ce qui est en discussion

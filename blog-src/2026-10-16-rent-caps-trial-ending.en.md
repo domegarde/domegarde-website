@@ -6,7 +6,7 @@ author: The Domegarde team
 checked: 2026-10-16
 excerpt: France's rent-cap scheme is a trial due to end in late November 2026 unless Parliament extends it. Where things stand on 16 October, what we know, and what we don't.
 review:
-- Exact end date: ANIL and the Assemblée nationale (bill no. 2039) say 25 November 2026; other sources say 23 or 24. Légifrance could not be reached on 16 October, so confirm it in the legal text (ELAN law, article 140, as amended by the 3DS law) before publishing.
+- Exact end date: ANIL and the Assemblée nationale (bill no. 2039) say 25 November 2026; other sources say 23 or 24, including one Service-Public page (Est Ensemble reference rents, "until 24 November 2026"). Légifrance could not be reached on 16 October, so confirm it in the legal text (ELAN law, article 140, as amended by the 3DS law) before publishing.
 - The Senate committee text no. 48 (14 October) is reported by a law firm only. The Senate's own page for bill no. 168 shows just the filing on 27 November 2025. Re-check the Senate's site just before publishing, and update this post.
 - Leases already signed when the trial ends: we don't know. The app's compliance list used to say they "keep their rent either way"; that sentence has been removed because no source supports it.
 - The app's compliance list said 24 November 2026; it now says 25 November (corrected on 16 October, once the correction is placed).
@@ -23,7 +23,7 @@ Rent caps (*encadrement des loyers*), which apply today in Paris and some other 
 ## What we know
 
 - It is a trial, not a permanent law: the ELAN law (23 November 2018) created it, and the 3DS law (21 February 2022) extended it.
-- It is due to end on 25 November 2026. That is the date given by ANIL and in the explanatory memorandum of a bill filed at the Assemblée nationale (no. 2039). A few sources give the 23rd or the 24th.
+- It is due to end on 25 November 2026. That is the date given by ANIL and in the explanatory memorandum of a bill filed at the Assemblée nationale (no. 2039). A few sources, including one Service-Public page, give the 23rd or the 24th.
 - It applies only in the areas that asked for it. According to ANIL they are Paris, Lille, Plaine Commune, Lyon and Villeurbanne, Est Ensemble, Montpellier, Bordeaux, the Pays basque and Grenoble-Alpes Métropole. The reference rents are set every year by order of the préfet.
 
 ## What is being discussed
