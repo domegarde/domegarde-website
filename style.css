@@ -691,7 +691,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   .need .chip { grid-column: 2; justify-self: start; }
 }
 
-/* Real screenshots (with example data). */
+.need.ok .bar { background: #4C7A4E; }
+.need.ok .chip { background: rgba(76,122,78,0.12); color: #3F6B41; }
+
+/* Real screenshots (with example data): one per row, large enough to read, with a plain sentence beside each. */
+.showcase { display: flex; flex-direction: column; gap: 80px; margin-top: 44px; }
+.showcase-row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: center; }
+.showcase-row:nth-child(even) { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+.showcase-row:nth-child(even) .showcase-text { order: 2; }
+.showcase-text h3 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin-bottom: 14px; }
+.showcase-text p { font-size: 1.05rem; max-width: 40ch; }
+.showcase-row .shot-img { max-width: 640px; justify-self: center; }
+@media (max-width: 860px) {
+  .showcase { gap: 56px; }
+  .showcase-row, .showcase-row:nth-child(even) { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .showcase-row:nth-child(even) .showcase-text { order: 0; }
+}
 .shot-img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--surface); }
 .shots-note { margin-top: 10px; max-width: 62ch; }
 
