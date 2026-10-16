@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Domegarde</title>
+    <link>https://www.domegarde.com/blog-fr.html</link>
+    <atom:link href="https://www.domegarde.com/feed-fr.xml" rel="self" type="application/rss+xml"/>
+    <description>Ce que Domegarde construit, et des explications sur les changements des règles de la location en France, avec leurs sources.</description>
+    <language>fr</language>
+
+  </channel>
+</rss>
