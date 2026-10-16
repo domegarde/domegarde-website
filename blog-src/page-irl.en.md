@@ -19,7 +19,7 @@ updated: 2026-10-16
 - A revision is possible once a year, and only if the lease contains an indexation clause.
 - You have one year from the revision date to ask. If you do not ask within that year, you lose the increase for that year.
 - The increase is not back-dated: it counts only from the day you tell your tenant. If the revision date was in March and you ask in June, only the rent from June on can be revised.
-- A home rated F or G on its energy label (DPE) cannot have its rent revised (leases signed, renewed or tacitly renewed since 24 August 2022).
+- A home rated F or G on its energy label (DPE) cannot have its rent revised (mainland France: leases signed, renewed or tacitly renewed since 24 August 2022; the overseas departments: since 1 July 2024).
 
 ## What this calculator does not cover
 

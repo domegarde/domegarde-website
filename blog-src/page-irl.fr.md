@@ -19,7 +19,7 @@ updated: 2026-10-16
 - Une révision est possible une fois par an, et seulement si le bail contient une clause d'indexation.
 - Vous avez un an à partir de la date de révision pour la demander. Si vous ne la demandez pas dans cette année, vous perdez la hausse pour cette année.
 - La hausse n'est pas rétroactive : elle ne compte qu'à partir du jour où vous prévenez votre locataire. Si la date de révision était en mars et que vous demandez en juin, seul le loyer à partir de juin peut être révisé.
-- Un logement classé F ou G au diagnostic de performance énergétique (DPE) ne peut pas voir son loyer révisé (baux signés, renouvelés ou tacitement reconduits depuis le 24 août 2022).
+- Un logement classé F ou G au diagnostic de performance énergétique (DPE) ne peut pas voir son loyer révisé (métropole : baux signés, renouvelés ou tacitement reconduits depuis le 24 août 2022 ; outre-mer : depuis le 1er juillet 2024).
 
 ## Ce que ce calculateur ne couvre pas
 
