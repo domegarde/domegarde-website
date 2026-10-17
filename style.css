@@ -810,3 +810,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .tool-open { color: var(--gold-text); font-weight: 600; }
 .tool-ics { margin-top: 8px; }
 @media (max-width: 640px) { .cal-item { grid-template-columns: 1fr; gap: 4px; } }
+
+/* -------------------- Draft scaffolds: placeholders, obligation list, review hub -------------------- */
+.ph { border: 2px dashed var(--gold-deep); background: #FFFBEF; border-radius: var(--radius-card); padding: 18px 22px; margin: 26px 0; }
+.ph-tag { margin: 0 0 10px; font-weight: 600; font-size: 1rem; }
+.ph-tag span { display: inline-block; font-size: 0.66rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 9px; margin-right: 8px; border-radius: 999px; background: var(--gold-text); color: #fff; }
+.ph-row { margin: 8px 0 0; }
+.ph-label { margin: 0 0 2px !important; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold-text); }
+.ph-row p { margin: 0 0 6px; max-width: 66ch; }
+.ph-row ul { margin: 2px 0 6px; padding-left: 1.2em; max-width: 66ch; }
+.ph-row li { margin: 0.25em 0; }
+.ob-list { list-style: none; padding: 0; margin: 8px 0 28px; }
+.ob-list li { padding: 10px 0; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.ob-list li:first-child { border-top: 0; }
+.ob-tier { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--ink-soft); }
+.ob-stops { border-color: #A3403A; color: #8A2F29; }
+.ob-money { border-color: var(--gold-deep); color: var(--gold-text); }
+.rv-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 20px 24px; margin: 0 0 16px; }
+.post-body .rv-card h2 { margin: 0 0 6px; font-size: 1.15rem; }
+.rv-meta, .rv-links { margin: 4px 0 0 !important; font-size: 0.9rem; color: var(--ink-soft); }

@@ -48,3 +48,34 @@ Run `python3 tools/build-blog.py` from the website folder. It rebuilds `blog.htm
   The tag is `Product` (French `Produit`) for the app or `Website` (`Site`) for this site. Use the day the change went live. Also change `updated:` at the top.
 
 Run `python3 tools/build-blog.py` after any change to these files.
+
+## Draft pages and placeholders (the scaffolds)
+
+Pages that are written but not ready for the public are **drafts**. Put `status: draft` in the front matter of a `page-<name>.<lang>.md` file (posts already work this way). A draft:
+
+- shows a yellow box at the top with its `review:` checklist and a count of its placeholders;
+- is always `noindex`, whatever `NOINDEX` says, and is never in the sitemap or the feeds;
+- is not linked from the header, the footer or any live page. The only list of drafts is the internal page **Drafts to review** (`review.html`, French `a-relire.html`), which is built automatically.
+
+A **placeholder** marks where content goes. It is a block of plain lines, with no blank line inside:
+
+    :::placeholder A short title
+    What goes here: what this part of the page is for, in a sentence or two.
+    Suggestion:
+    - one idea for what to write
+    - another idea
+    Needs: who has to provide it (French: "Ce qui va ici :", "Suggestion :", "À fournir :")
+    :::
+
+It appears as a dashed numbered box (Placeholder 1, 2, 3 and so on). Replace the whole block with the real text when you have it. Extra front matter for pages: `reviewer:` (shown on the review page) and `internal: yes` (for the review page itself).
+
+**Obligation pages:** `page-ob-<name>.en.md` and `.fr.md`, one per legal duty (44, generated once from the app's catalogue, now edited by hand). They need `stage:` (0 to 5), `tier:` (stops, money, dispute or practice) and `order:` in the front matter. They are listed by `page-obligations.*.md` (the line `{{obligation-list}}`).
+
+### Publishing a draft
+
+1. Replace every placeholder with the real text, and clear the review list: each point checked, or removed with the reason.
+2. Remove `status: draft` in both languages.
+3. Run `python3 tools/build-blog.py` (it adds the page to the sitemap on its own).
+4. Add the link where it belongs (footer, About page, or the app), and add an entry to `page-changelog.*.md`.
+5. On launch day only: set `NOINDEX = False`. Drafts stay hidden regardless.
+
