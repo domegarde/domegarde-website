@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: L142-1 to L142-4 CCH; NF EN 14604 (link to add)
+- Official explanation: search « Détecteur de fumée installé bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Inès fits a smoke alarm marked NF EN 14604 on the hallway ceiling, away from the kitchen and bathroom, in ten minutes. The flat is unfurnished, so from then on her tenant looks after the battery. (Illustration with invented names, not a real case.)
 :::

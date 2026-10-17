@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : CGI art. 1418 — « Gérer mes biens immobiliers » (lien à ajouter)
+- Explication officielle : chercher « Occupation déclarée à l'administration fiscale bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Sylvie signe un nouveau bail en avril. Elle se connecte à impots.gouv.fr, va dans Gérer mes biens immobiliers, et indique le nouveau locataire et la date de début. Elle fait de même à chaque changement de locataire, et en tout cas avant le 30 juin. (Illustration avec des noms inventés, pas un cas réel.)
 :::

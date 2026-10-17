@@ -46,6 +46,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 5 loi 89-462; décret 2014-890; caps revalued 1 January 2026 (link to add)
+- Official explanation: search « Si vous passez par une agence bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -54,4 +58,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Valérie lets through an agent in a zone tendue. The agent proposes charging the tenant for the visit, the file, the lease and the entry inventory, within the per-m² caps. Valérie checks the caps before agreeing and asks that nothing be charged for the exit inventory. (Illustration with invented names, not a real case.)
 :::

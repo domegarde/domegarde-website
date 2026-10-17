@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : L134-9 CCH ; arrêté du 6 avril 2007 — installations fixes de plus de 15 ans (lien à ajouter)
+- Explication officielle : chercher « Diagnostic de l'installation de gaz bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: L'appartement de Camille a une plaque et une chaudière à gaz installées il y a plus de 15 ans. Le diagnostic gaz contrôle les canalisations, les raccords et les conduits lors de la même visite que les autres diagnostics. Le rapport est valable six ans. (Illustration avec des noms inventés, pas un cas réel.)
 :::

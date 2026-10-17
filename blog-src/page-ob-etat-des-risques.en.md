@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: L125-5 Code de l'environnement — dated under 6 months at signature (link to add)
+- Official explanation: search « État des risques (ERP) bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: On the morning of signing, Lucas types the address into the Géorisques site, the form fills itself in and he prints it. It takes ten minutes and costs nothing. He does it that morning because it is only valid for six months. (Illustration with invented names, not a real case.)
 :::

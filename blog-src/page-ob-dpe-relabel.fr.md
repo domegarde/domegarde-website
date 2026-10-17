@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : arrêté du 13 août 2025 — coefficient de 2,3 à 1,9 à compter du 1er janvier 2026 ; arrêté du 19 août 2026 — de 1,9 à 1,7 à compter du 1er janvier 2027 (lien à ajouter)
+- Explication officielle : chercher « Réétiquetage gratuit du DPE par l'ADEME bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Karim possède un petit appartement classé F, chauffé à l'électricité, et pense ne plus pouvoir le louer en 2028. Un ami lui parle du ré-étiquetage gratuit. Il saisit le numéro à 13 caractères de son DPE sur le site de l'ADEME, en cinq minutes environ, et le logement ressort avec une meilleure lettre. Pas de visite, pas de coût. (Illustration avec des noms inventés, pas un cas réel.)
 :::

@@ -38,6 +38,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 6 et 7 d) loi 89-462 ; décret 87-712 (lien à ajouter)
+- Explication officielle : chercher « Qui paie quoi bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -46,4 +50,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Un robinet fuit dans l'appartement de Vincent et le locataire l'appelle. Vincent explique que les robinets et joints sont à la charge du locataire, alors que la vieille chaudière qui lâche d'usure est à lui. Il envoie le jour même la demande de devis pour la chaudière à un installateur. (Illustration avec des noms inventés, pas un cas réel.)
 :::

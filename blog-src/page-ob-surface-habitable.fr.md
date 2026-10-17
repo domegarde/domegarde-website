@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 3 et 3-1 loi 89-462 ; R156-1 CCH (lien à ajouter)
+- Explication officielle : chercher « Surface habitable bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Julie mesure son appartement au mètre : surface au sol sous au moins 1,80 m de hauteur, sans les murs, l'escalier ni la cave. Elle trouve un peu moins que le chiffre de ses anciens documents et inscrit le plus faible dans le bail, en gardant une note de sa mesure. (Illustration avec des noms inventés, pas un cas réel.)
 :::

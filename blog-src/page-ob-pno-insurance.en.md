@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 9-1 loi 65-557 — mandatory civil liability for non-occupying co-owners (link to add)
+- Official explanation: search « Votre propre assurance (PNO) bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Marc owns a flat in a copropriété that he does not live in. He takes landlord's insurance online the same day: at minimum his civil liability, plus the building fabric. It costs him a few hundred euros a year at most for a Paris flat. (Illustration with invented names, not a real case.)
 :::

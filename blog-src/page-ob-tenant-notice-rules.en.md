@@ -38,6 +38,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 15 I and 25-8 loi 89-462 (link to add)
+- Official explanation: search « Le congé du locataire bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -46,4 +50,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: A tenant emails Jérôme to say he is leaving. Jérôme replies politely that an email does not count: notice must go by registered post, commissaire de justice, or hand delivery against signature. The tenant re-sends it properly, and the notice period starts then. (Illustration with invented names, not a real case.)
 :::

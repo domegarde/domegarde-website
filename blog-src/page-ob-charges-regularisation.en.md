@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 23 loi 89-462; décret 87-713 (link to add)
+- Official explanation: search « Régularisation annuelle des charges bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Every spring, Gilles takes the syndic's annual accounts and compares them with the provisions his tenant paid. The difference is €96 in the tenant's favour. He sends the breakdown a month before settling, and keeps the receipts available for six months. (Illustration with invented names, not a real case.)
 :::

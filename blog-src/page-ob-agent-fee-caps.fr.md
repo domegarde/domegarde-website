@@ -46,6 +46,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 5 loi 89-462 ; décret 2014-890 ; plafonds revalorisés au 1er janvier 2026 (lien à ajouter)
+- Explication officielle : chercher « Si vous passez par une agence bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -54,4 +58,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Valérie loue par l'intermédiaire d'une agence en zone tendue. L'agence propose de facturer au locataire la visite, le dossier, la rédaction du bail et l'état des lieux d'entrée, dans la limite des plafonds au m². Valérie vérifie les plafonds avant d'accepter et demande que rien ne soit facturé pour l'état des lieux de sortie. (Illustration avec des noms inventés, pas un cas réel.)
 :::

@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 3-2 loi 89-462; décret 2016-382; art. 1731 Code civil (link to add)
+- Official explanation: search « État des lieux d'entrée bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Fatima and her new tenant go through the flat together, room by room, with photos, and read the meters. Both sign when the keys change hands. Fatima keeps a copy, which will matter if there is ever a dispute about the deposit. (Illustration with invented names, not a real case.)
 :::

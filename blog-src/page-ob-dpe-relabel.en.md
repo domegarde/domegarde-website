@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: arrêté 13 août 2025 — coefficient 2.3 → 1.9 from 1 Jan 2026; arrêté 19 août 2026 — 1.9 → 1.7 from 1 Jan 2027 (link to add)
+- Official explanation: search « Réétiquetage gratuit du DPE par l'ADEME bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Karim owns a small flat rated F, heated by electricity, and expects to be barred from letting it in 2028. A friend tells him about the free re-label. He types the 13-character number from his DPE into the ADEME site, which takes about five minutes, and the flat comes back with a better letter. No visit, no cost. (Illustration with invented names, not a real case.)
 :::

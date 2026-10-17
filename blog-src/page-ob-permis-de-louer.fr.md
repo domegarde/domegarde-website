@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : L634-1 et L635-1 CCH — lorsque la commune l'a instauré (lien à ajouter)
+- Explication officielle : chercher « Permis de louer bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Antoine achète un appartement dans une commune qui a instauré le permis de louer. Il dépose le formulaire d'autorisation avant de signer le bail, attend un mois, et le silence vaut accord. Il garde la référence pour la mettre dans le bail. (Illustration avec des noms inventés, pas un cas réel.)
 :::

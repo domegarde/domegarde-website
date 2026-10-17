@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 22-1 loi 89-462 ; art. 2297 Code civil ; Visale (lien à ajouter)
+- Explication officielle : chercher « Si vous prenez un garant bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: La locataire de Hugo est étudiante et son père accepte d'être caution. Il écrit lui-même le plafond en lettres et en chiffres et signe l'acte, et Hugo lui remet une copie du bail le jour même. Hugo n'a pas pris d'assurance, donc il n'y a pas de conflit. (Illustration avec des noms inventés, pas un cas réel.)
 :::

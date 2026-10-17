@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 3 loi 89-462 ; annexes du décret 2015-587 (lien à ajouter)
+- Explication officielle : chercher « Le bail mentionne les informations obligatoires bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Nathalie remplit le modèle ligne à ligne : surface, réception TV et internet, classe énergétique, clause de révision avec le trimestre de l'IRL, et loyers de référence. Elle allait oublier la clause de révision, se souvient qu'une clause manquante l'est pour toujours, et l'ajoute. (Illustration avec des noms inventés, pas un cas réel.)
 :::

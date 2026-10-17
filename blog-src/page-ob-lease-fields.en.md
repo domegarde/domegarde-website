@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 3 loi 89-462; annexes to décret 2015-587 (link to add)
+- Official explanation: search « Le bail mentionne les informations obligatoires bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Nathalie fills in the template line by line: surface, TV and internet reception, energy class, the revision clause with the IRL quarter, and the reference rents. She nearly skips the revision clause, then remembers that a missing one is permanent, and adds it. (Illustration with invented names, not a real case.)
 :::

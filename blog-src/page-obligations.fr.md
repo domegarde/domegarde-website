@@ -20,6 +20,7 @@ Suggestion:
 - dire à qui elle s'adresse : un bailleur qui veut vérifier une seule obligation sans lire toute une loi
 - dire à quelle fréquence les pages sont vérifiées, et où signaler une erreur
 À fournir: Les fondateurs.
+Exemple: Les règles pour les bailleurs sont réparties dans plusieurs lois, et le plus souvent vous n'avez besoin que d'une seule. Nous avons donc écrit une page par obligation : de quoi il s'agit, ce que coûte le fait de l'ignorer, qui vous fournit le document, et le droit qui la fonde. Nous vérifions les pages régulièrement et nous indiquons la date.
 :::
 
 :::placeholder Formulation de l'avertissement juridique
@@ -28,6 +29,7 @@ Suggestion:
 - nos articles utilisent : « Cet article informe, il ne constitue pas un conseil juridique. Il a été vérifié pour la dernière fois le [date] ; les règles évoluent, merci de confirmer tout point important auprès des sources officielles, ou d'un avocat, d'un notaire ou d'un expert-comptable. »
 - un juriste doit confirmer ou remplacer cette formulation
 À fournir: Un juriste.
+Exemple: Cette page informe, elle ne constitue pas un conseil juridique. Elle a été vérifiée pour la dernière fois le [date] ; les règles évoluent, merci de confirmer tout point important auprès des sources officielles indiquées ci-dessous, ou d'un avocat, d'un notaire ou d'un expert-comptable. Si vous voyez une erreur, dites-le-nous.
 :::
 
 {{obligation-list}}

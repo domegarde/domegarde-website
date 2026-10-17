@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : L125-5 Code de l'environnement — daté de moins de 6 mois à la signature (lien à ajouter)
+- Explication officielle : chercher « État des risques (ERP) bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Le matin de la signature, Lucas saisit l'adresse sur le site Géorisques, le document se remplit tout seul et il l'imprime. Cela prend dix minutes et ne coûte rien. Il le fait ce matin-là parce qu'il n'est valable que six mois. (Illustration avec des noms inventés, pas un cas réel.)
 :::

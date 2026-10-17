@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 9-1 loi 65-557 — responsabilité civile obligatoire des copropriétaires non occupants (lien à ajouter)
+- Explication officielle : chercher « Votre propre assurance (PNO) bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Marc possède un appartement en copropriété où il n'habite pas. Il souscrit une assurance propriétaire non occupant en ligne le jour même : au minimum sa responsabilité civile, souvent aussi le bâti. Cela lui coûte au plus quelques centaines d'euros par an pour un appartement parisien. (Illustration avec des noms inventés, pas un cas réel.)
 :::

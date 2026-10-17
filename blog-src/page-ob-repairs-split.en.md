@@ -38,6 +38,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 6 and 7 d) loi 89-462; décret 87-712 (link to add)
+- Official explanation: search « Qui paie quoi bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -46,4 +50,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: A tap leaks in Vincent's flat, and the tenant calls him. Vincent explains that the tenant pays for taps and seals, while the old boiler failing of age is his to replace. He sends the boiler repair quote to an installer the same day. (Illustration with invented names, not a real case.)
 :::

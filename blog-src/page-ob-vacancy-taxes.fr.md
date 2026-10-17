@@ -43,6 +43,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : CGI art. 232 et 1407 bis jusqu'en 2026, remplacés par l'art. 1406 bis à partir de l'imposition 2027 (LF 2026 art. 108, loi 2026-103 du 19 février 2026) (lien à ajouter)
+- Explication officielle : chercher « Une fois le logement vide bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -51,4 +55,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: L'appartement de Stéphane est vide en décembre, le temps de trouver un locataire. Avant le 1er janvier, il met à jour la déclaration d'occupation. Comme il est vide de meubles et situé dans une commune soumise à la taxe, il vérifie s'il s'agit d'une première année de vacance et si la taxe le concerne. (Illustration avec des noms inventés, pas un cas réel.)
 :::

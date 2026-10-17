@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 7 g) and 7-1 loi 89-462 (link to add)
+- Official explanation: search « Attestation d'assurance du locataire bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: When Pierre hands over the keys, he asks the tenant for the insurance certificate covering fire, explosion and water damage, and keeps a copy. Each year he asks for the new one. (Illustration with invented names, not a real case.)
 :::

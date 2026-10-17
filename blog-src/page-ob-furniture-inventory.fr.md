@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 25-4 et 25-5 loi 89-462 ; décret 2015-981 — onze éléments obligatoires (lien à ajouter)
+- Explication officielle : chercher « Inventaire du mobilier bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Benoît loue un studio meublé. Lors de l'état des lieux d'entrée, lui et le locataire parcourent la liste : literie, occultation de la chambre, plaque, four ou micro-ondes, réfrigérateur avec congélateur, vaisselle, ustensiles, table et sièges, rangements, luminaires, matériel d'entretien. Ils la signent ensemble. (Illustration avec des noms inventés, pas un cas réel.)
 :::

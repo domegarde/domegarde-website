@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: L134-9 CCH; arrêté 6 avril 2007 — fixed installations over 15 years old (link to add)
+- Official explanation: search « Diagnostic de l'installation de gaz bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Camille's flat has a gas hob and boiler installed more than 15 years ago. The gas survey checks the pipework, the connections and the flues in the same visit as the other diagnostics. The report is valid for six years. (Illustration with invented names, not a real case.)
 :::

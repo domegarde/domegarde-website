@@ -22,6 +22,7 @@ Suggestion:
 - say what it cost, in euros or months, if you know
 - our early notes suggest the story of a British landlord in Paris facing French rental rules: use it only if it is true
 Needs: The founders. One person writes it in the first person, or the group writes "we": decide once.
+Example: It was a Tuesday in March when the message arrived. [Name]'s tenant in Montreuil politely pointed out that the yearly rent revision had been due the spring before. It could no longer be claimed: about €[amount] a year, gone, because nobody had said there was a one-year deadline. Domegarde exists so that nobody learns a rule that way.
 :::
 
 ## The problem we saw
@@ -35,6 +36,7 @@ Suggestion:
 - those figures come from our own research and were not independently verified: check them at the source before using them
 - if you cannot verify a figure, leave it out: the paragraph above works without it
 Needs: Whoever checks the source (Claudia or a founder).
+Example: About 3.9 million people in France let out a home as private individuals, and around two thirds of them own just one rental (ANIL/ADIL 75, April 2025). [Check the source and the date before using this.]
 :::
 
 ## What we are building
@@ -54,6 +56,7 @@ Suggestion:
 - make it specific and checkable ("we will tell you when a rule changes, with the source") and not a general claim ("we care about landlords")
 - avoid superlatives ("the best", "the only")
 Needs: The founders.
+Example: We will tell you when a rule that affects your property changes, and we will show you our source and the day we checked it.
 :::
 
 ## The people
@@ -67,6 +70,7 @@ Suggestion:
 - alt text describing the person plainly ("Name, smiling, outdoors")
 - optional: one link (LinkedIn or a personal site)
 Needs: The founder, who must also consent to the photo being published.
+Example: **[First name Last name]**, Founder, product and operations. [First name] let a flat in Paris for [N] years and started the checklist after missing a deadline of their own. Based in Paris. [Link]
 :::
 
 :::placeholder Founder 2
@@ -74,6 +78,7 @@ What goes here: the same details for the second founder. Delete this box if ther
 Suggestion:
 - keep the structure and length the same as Founder 1 so the cards look even
 Needs: The second founder.
+Example: **[First name Last name]**, Founder, [role: for example law and compliance]. [Two lines: what this person did before, and why the rules of French letting matter to them.] [Link]
 :::
 
 :::placeholder Founder 3
@@ -81,6 +86,7 @@ What goes here: the same details for the third founder. Delete this box if there
 Suggestion:
 - if the team grows, add boxes in the same way; do not list people who are not yet part of the team
 Needs: The third founder.
+Example: **[First name Last name]**, Founder, [role: for example design and engineering]. [Two lines: what this person built before, and what they own at Domegarde today.] [Link]
 :::
 
 ## Where we are, and how to reach us
@@ -92,4 +98,5 @@ What goes here: one or two sentences inviting readers to get in touch or try the
 Suggestion:
 - point to something useful and free, such as the [free tools](tools.html), rather than a sales line
 Needs: The founders.
+Example: Questions, or a mistake to report? Write to us through the contact form. We read every message, and we correct errors in the open on the What's new page.
 :::

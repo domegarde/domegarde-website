@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 22 loi 89-462 (link to add)
+- Official explanation: search « Dépôt de garantie restitué dans les délais bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: The keys come back on 3 March and the two inventories match. Bruno diarises 3 April, sends the full deposit to the forwarding address the tenant gave, and deducts nothing because he has no proof of damage beyond wear and tear. (Illustration with invented names, not a real case.)
 :::

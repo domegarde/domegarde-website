@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: décret 2017-1198, renewed by décret 2026-644 to 31 July 2027 (link to add)
+- Official explanation: search « Loyer dans le plafond de relocation bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Émilie's last tenant paid €720. In a zone tendue she may not ask the new one for more than that, adjusted by the IRL, unless she did works worth at least half a year's rent. She compares the new rent with the last lease and keeps the figure. (Illustration with invented names, not a real case.)
 :::

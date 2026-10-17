@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: décret 2015-587, rewritten by décret 2026-596 for leases signed or renewed from 1 October 2026 (link to add)
+- Official explanation: search « Le bail, sur le modèle type réglementaire bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Olivier is signing a new lease in November 2026. He downloads the current template from Service-Public (annex 1, unfurnished) rather than reusing his old one, because leases signed from 1 October 2026 use the new version. It takes him about an hour to complete. (Illustration with invented names, not a real case.)
 :::

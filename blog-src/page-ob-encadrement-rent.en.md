@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 140 loi ELAN — expires 25 November 2026 (one Service-Public page says 24) unless extended (link to add)
+- Official explanation: search « Loyer dans le plafond local (encadrement des loyers) bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Léa lets a flat in Paris. On the préfecture's simulator she enters the area, size, period and letting type, reads the reference rent, and checks that her rent stays under it plus 20%. She quotes the reference rents in both the advert and the lease. (Illustration with invented names, not a real case.)
 :::

@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 6 loi 89-462; décret 2002-120; loi Climat (nuisibles) (link to add)
+- Official explanation: search « Le logement respecte les critères de décence bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Hélène walks round her studio with the décence list before the new tenant arrives. The ceiling is high enough and the heating works, but she finds signs of bed bugs left by the previous occupant. She has it treated before handing over the keys, because a pest-infested home is not decent to let. (Illustration with invented names, not a real case.)
 :::

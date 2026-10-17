@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 4 and 24 loi 89-462; L412-6 CPCE (link to add)
+- Official explanation: search « En cas de loyer impayé bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Rent is late for the second month running. Alexandre does not wait for a third: he asks the ADIL to explain the steps, then has a commissaire de justice serve a commandement de payer, which gives the tenant six weeks. He knows nothing can be done between 1 November and 31 March, so he starts early. (Illustration with invented names, not a real case.)
 :::

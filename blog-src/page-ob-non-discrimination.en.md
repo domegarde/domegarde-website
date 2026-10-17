@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 225-1 and 225-2 Code pénal; art. 1 loi 89-462 (link to add)
+- Official explanation: search « Une règle de solvabilité écrite, appliquée à tous les dossiers bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Before advertising, Sarah writes one rule on a sheet: income of at least three times the rent. She applies it to every file in the same way, including candidates with a Visale guarantee, and keeps the sheet. (Illustration with invented names, not a real case.)
 :::

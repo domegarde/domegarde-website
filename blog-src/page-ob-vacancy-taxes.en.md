@@ -43,6 +43,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: CGI art. 232 and 1407 bis until 2026, replaced by art. 1406 bis from the 2027 tax year (LF 2026 art. 108, loi 2026-103 of 19 February 2026) (link to add)
+- Official explanation: search « Une fois le logement vide bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -51,4 +55,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Stéphane's flat is empty in December while he looks for a tenant. Before 1 January he updates the occupancy declaration. Because it is unfurnished and in a vacancy-tax commune, he checks whether this is one year empty, and whether the tax applies to him. (Illustration with invented names, not a real case.)
 :::

@@ -42,6 +42,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 15 III loi 89-462 ; arrêté du 19 décembre 2025 (plafonds) (lien à ajouter)
+- Explication officielle : chercher « Locataire de plus de 65 ans bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -50,4 +54,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Josiane veut donner congé pour vendre, mais son locataire, M. Garnier, a 71 ans et ses revenus sont sous le plafond. Avant de rien prévoir, elle vérifie : sauf à lui proposer un logement équivalent à proximité, aucun congé n'est possible. Elle renonce à son projet pour l'instant. (Illustration avec des noms inventés, pas un cas réel.)
 :::

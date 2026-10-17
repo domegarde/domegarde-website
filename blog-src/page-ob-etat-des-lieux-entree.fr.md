@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 3-2 loi 89-462 ; décret 2016-382 ; art. 1731 Code civil (lien à ajouter)
+- Explication officielle : chercher « État des lieux d'entrée bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Fatima et sa nouvelle locataire parcourent l'appartement ensemble, pièce par pièce, avec des photos, et relèvent les compteurs. Toutes deux signent à la remise des clés. Fatima garde une copie, qui comptera s'il y a un jour un litige sur le dépôt de garantie. (Illustration avec des noms inventés, pas un cas réel.)
 :::

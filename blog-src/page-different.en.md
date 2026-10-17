@@ -28,6 +28,7 @@ Suggestion:
 - think about habits and data, not features: for example keeping a dated source for every rule, or working in both languages
 - test it by asking "could a competitor claim the same thing tomorrow?": if yes, rewrite it
 Needs: The founders.
+Example: Every rule on Domegarde shows its source and the day we last checked it, in French and English, and we publish what changed on a public list.
 :::
 
 ## What Domegarde does not do
@@ -48,6 +49,8 @@ Suggestion:
 - say whether prices include VAT
 - if a plan has a feature that is not live yet (such as the AI steward), say so in the same sentence
 Needs: The founders (decision), and Florence for the wording of the pricing page.
+Example: Option A, no free plan: Domegarde costs €35 a month for up to three properties (€349 a year, [including / excluding] VAT). There is no free plan. If you have one home and only need a rent calculation or a calendar, our free tools are enough.
+Option B, with a free tier (needs a decision): Domegarde is free for one property, with [list what is included]. From two properties it costs [price]. [Say what the paid plans add.]
 :::
 
 :::placeholder Who Domegarde is not for
@@ -56,6 +59,10 @@ Suggestion:
 - for example landlords who want their rent collected or a letting agent: Domegarde does neither
 - being clear about this builds trust and saves support time
 Needs: The founders.
+Example:
+- You want your rent collected and paid out to you: Domegarde never holds money.
+- You want an agent to find tenants and manage the property: Domegarde does neither.
+- You let commercial premises: our checks are for homes let as a main residence.
 :::
 
 :::placeholder Proof we can add later
@@ -64,4 +71,5 @@ Suggestion:
 - add only what is real and dated, with permission to quote
 - leave this box empty, and delete it, until then
 Needs: The founders, once there are customers.
+Example: Since opening early access in [month], [number] landlords have added [number] properties. "[Short quote from a landlord.]" [Name, town, with permission.]
 :::

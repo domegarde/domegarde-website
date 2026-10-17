@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 21 loi 89-462 (link to add)
+- Official explanation: search « Quittances de loyer sur demande bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: The tenant asks Chloé for a rent receipt for a visa application. She sends one the same day, showing rent and charges separately, at no cost. The tenant paid only part of last month, so for that month she sends a reçu instead. (Illustration with invented names, not a real case.)
 :::

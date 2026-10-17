@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 22-2 loi 89-462; décret 2015-1437 as amended 2019 (link to add)
+- Official explanation: search « Ne demander que les pièces de la liste autorisée bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: A candidate for Mehdi's flat sends a full folder, including a bank statement. Mehdi sticks to the list: one identity document, one proof of address, proof of activity, proof of resources. He does not ask for the bank statement, and tells the candidate so. (Illustration with invented names, not a real case.)
 :::

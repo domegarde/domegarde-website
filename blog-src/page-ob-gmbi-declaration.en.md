@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: CGI art. 1418 — "Gérer mes biens immobiliers" (link to add)
+- Official explanation: search « Occupation déclarée à l'administration fiscale bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Sylvie signs a new lease in April. She logs in to impots.gouv.fr, goes to Gérer mes biens immobiliers, and records the new tenant and the start date. She does the same whenever the tenant changes, and in any case by 30 June. (Illustration with invented names, not a real case.)
 :::

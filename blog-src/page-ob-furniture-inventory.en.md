@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 25-4 and 25-5 loi 89-462; décret 2015-981 — eleven mandatory items (link to add)
+- Official explanation: search « Inventaire du mobilier bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Benoît lets a furnished studio. At the entry inventory he and the tenant go through the list: bedding, blackout for the bedroom, hob, oven or microwave, fridge with a freezer compartment, crockery, utensils, table and chairs, shelving, lights, cleaning equipment. They sign it together. (Illustration with invented names, not a real case.)
 :::

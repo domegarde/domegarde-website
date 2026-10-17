@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: L134-7 CCH — installations over 15 years old; valid 6 years for lettings (link to add)
+- Official explanation: search « Diagnostic de l'installation électrique bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Paul's flat has wiring from 1985, over 15 years old, so a survey is needed. The diagnostician does it in the same visit as the DPE. The report is valid for six years for a letting, not the three that apply on a sale, and Paul diarises the date. (Illustration with invented names, not a real case.)
 :::

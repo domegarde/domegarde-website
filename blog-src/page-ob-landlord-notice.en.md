@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 15 I–II and 25-8 loi 89-462 (link to add)
+- Official explanation: search « Votre propre congé bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Patrick wants to sell his flat when the lease ends in September. He diarises the deadline six months before and sends a registered letter to both co-tenants, with the information leaflet, naming the sale as the reason and offering them the first right to buy for two months. He asks the ADIL to check the wording first. (Illustration with invented names, not a real case.)
 :::

@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: CGI art. 1447 and 1647 D (link to add)
+- Official explanation: search « CFE (cotisation foncière des entreprises) pour la location meublée bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Théo's furnished flat enters its second year. In December the tax office bills him a few hundred euros of CFE; he had filed form 1447-C by 31 December of his first year. He had set the money aside, unlike a friend who was caught out. (Illustration with invented names, not a real case.)
 :::

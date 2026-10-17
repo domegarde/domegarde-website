@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : CGI — revenus fonciers (2044) ou BIC (2042-C-PRO) ; LFSS 2026 art. 12 (lien à ajouter)
+- Explication officielle : chercher « Revenus locatifs de l'année déclarés bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: En mai, Laure ouvre sa déclaration. Son appartement vide a rapporté 9 600 € de loyers, moins de 15 000 €, donc elle peut utiliser le micro-foncier avec l'abattement de 30 %. Elle note que pour un meublé, ce serait un autre formulaire (2042-C-PRO). (Illustration avec des noms inventés, pas un cas réel.)
 :::

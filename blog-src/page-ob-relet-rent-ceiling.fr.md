@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : décret 2017-1198, reconduit par le décret 2026-644 jusqu'au 31 juillet 2027 (lien à ajouter)
+- Explication officielle : chercher « Loyer dans le plafond de relocation bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Le dernier locataire d'Émilie payait 720 €. En zone tendue, elle ne peut pas demander plus au suivant, une fois ajusté par l'IRL, sauf si elle a fait des travaux d'au moins un demi-loyer annuel. Elle compare le nouveau loyer avec le dernier bail et conserve le chiffre. (Illustration avec des noms inventés, pas un cas réel.)
 :::

@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 3-3 loi 89-462; L126-26 CCH; loi Climat 2021-1104 (link to add)
+- Official explanation: search « Diagnostic de performance énergétique (DPE) bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Sophie lets a two-room flat in Lyon. Her tenant leaves and, before advertising, she checks her certificate: it was issued in 2018 under the old method, so it is void today whatever its date. She books a diagnostician, who comes within three days, and the new rating is in her advert before the first viewing. (Illustration with invented names, not a real case.)
 :::

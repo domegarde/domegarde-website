@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: L1334-5 CSP — buildings built before 1 January 1949 (link to add)
+- Official explanation: search « Constat de risque d'exposition au plomb (CREP) bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Thomas inherits a flat in a building from 1938. At the diagnostic visit the lead survey finds lead paint in the hallway. The report is valid for six years and he gives a copy to the tenant, who is told what to avoid sanding. (Illustration with invented names, not a real case.)
 :::

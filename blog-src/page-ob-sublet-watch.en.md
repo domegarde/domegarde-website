@@ -38,6 +38,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 8 loi 89-462 (link to add)
+- Official explanation: search « Sous-location, y compris sur Airbnb bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -46,4 +50,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Margaux sees her flat listed on a short-term platform without her knowing. The tenant had no written agreement from her on the principle or the price. She writes to the tenant, asks for the sub-rents received, and starts the termination steps with advice from the ADIL. (Illustration with invented names, not a real case.)
 :::

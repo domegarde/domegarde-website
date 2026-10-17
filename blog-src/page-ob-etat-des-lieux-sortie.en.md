@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 3-2 and 22 loi 89-462; décret 2016-382 (link to add)
+- Official explanation: search « État des lieux de sortie bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: When the tenant returns the keys, Adèle and her tenant go through the flat with the entry inventory in hand, comparing it line by line. They agree on a small scuff in the hallway and sign. It takes an hour. (Illustration with invented names, not a real case.)
 :::

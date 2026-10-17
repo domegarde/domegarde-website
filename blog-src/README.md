@@ -65,17 +65,19 @@ A **placeholder** marks where content goes. It is a block of plain lines, with n
     - one idea for what to write
     - another idea
     Needs: who has to provide it (French: "Ce qui va ici :", "Suggestion :", "À fournir :")
+    Example: an invented sample of the finished text (French: "Exemple :"). Optional; the last field.
     :::
 
-It appears as a dashed numbered box (Placeholder 1, 2, 3 and so on). Replace the whole block with the real text when you have it. Extra front matter for pages: `reviewer:` (shown on the review page) and `internal: yes` (for the review page itself).
+It appears as a dashed numbered box (Placeholder 1, 2, 3 and so on). The `Example:` is shown in a green box labelled as invented, so the page reads as finished; it is a sample, never a fact. A button at the top of a draft ("View as a finished page") hides the guidance and shows the examples as plain text. Replace the whole block with the real text when you have it. Extra front matter for pages: `reviewer:` (shown on the review page) and `internal: yes` (for the review page itself).
 
 **Obligation pages:** `page-ob-<name>.en.md` and `.fr.md`, one per legal duty (44, generated once from the app's catalogue, now edited by hand). They need `stage:` (0 to 5), `tier:` (stops, money, dispute or practice) and `order:` in the front matter. They are listed by `page-obligations.*.md` (the line `{{obligation-list}}`).
 
 ### Publishing a draft
 
-1. Replace every placeholder with the real text, and clear the review list: each point checked, or removed with the reason.
+1. Replace every placeholder (guidance and example together) with the real text, and clear the review list: each point checked, or removed with the reason.
 2. Remove `status: draft` in both languages.
 3. Run `python3 tools/build-blog.py` (it adds the page to the sitemap on its own).
 4. Add the link where it belongs (footer, About page, or the app), and add an entry to `page-changelog.*.md`.
-5. On launch day only: set `NOINDEX = False`. Drafts stay hidden regardless.
+5. The build refuses to publish any non-draft page or post that still contains a `:::placeholder` block, so an example cannot go live by accident.
+6. On launch day only: set `NOINDEX = False`. Drafts stay hidden regardless.
 

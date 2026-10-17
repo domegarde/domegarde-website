@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : L134-7 CCH — installations de plus de 15 ans ; valable 6 ans pour une location (lien à ajouter)
+- Explication officielle : chercher « Diagnostic de l'installation électrique bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: L'installation électrique de l'appartement de Paul date de 1985, soit plus de 15 ans : un diagnostic est nécessaire. Le diagnostiqueur le fait lors de la même visite que le DPE. Le rapport est valable six ans pour une location, et non trois comme pour une vente, et Paul note la date dans son agenda. (Illustration avec des noms inventés, pas un cas réel.)
 :::

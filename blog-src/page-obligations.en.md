@@ -20,6 +20,7 @@ Suggestion:
 - explain who it is for: a landlord who wants to check a single duty without reading a whole law
 - say how often the pages are checked, and where to report a mistake
 Needs: The founders.
+Example: Landlord rules are spread across several laws, and most of the time you only need one of them. So we wrote one page for each duty: what it is, what it costs to ignore, who gives you the document, and the law behind it. We check the pages regularly and show the date.
 :::
 
 :::placeholder Legal disclaimer wording
@@ -28,6 +29,7 @@ Suggestion:
 - the news posts use: "This article gives information, not legal advice. It was last checked on [date]; rules change, so please confirm anything that matters with the official sources, or with a lawyer, notary or accountant."
 - a lawyer should confirm or replace this wording
 Needs: A lawyer.
+Example: This page gives information, not legal advice. It was last checked on [date]; rules change, so please confirm anything that matters with the official sources linked below, or with a lawyer, notary or accountant. If you spot a mistake, tell us.
 :::
 
 {{obligation-list}}

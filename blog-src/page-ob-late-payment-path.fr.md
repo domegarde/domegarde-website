@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : art. 4 et 24 loi 89-462 ; L412-6 CPCE (lien à ajouter)
+- Explication officielle : chercher « En cas de loyer impayé bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Le loyer est en retard pour le deuxième mois de suite. Alexandre n'attend pas le troisième : il demande à l'ADIL d'expliquer les étapes, puis fait signifier un commandement de payer par un commissaire de justice, qui laisse six semaines au locataire. Il sait qu'aucune expulsion n'est possible entre le 1er novembre et le 31 mars, donc il commence tôt. (Illustration avec des noms inventés, pas un cas réel.)
 :::

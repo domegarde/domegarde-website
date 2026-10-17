@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 22-1 loi 89-462; art. 2297 Code civil; Visale (link to add)
+- Official explanation: search « Si vous prenez un garant bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Hugo's tenant is a student, and her father agrees to be guarantor. He writes the ceiling out himself in words and figures and signs the act, and Hugo gives him a copy of the lease the same day. Hugo took no insurance, so there is no conflict. (Illustration with invented names, not a real case.)
 :::

@@ -48,6 +48,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : décret 2015-587, réécrit par le décret 2026-596 pour les baux signés ou renouvelés à compter du 1er octobre 2026 (lien à ajouter)
+- Explication officielle : chercher « Le bail, sur le modèle type réglementaire bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -56,4 +60,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Olivier signe un nouveau bail en novembre 2026. Il télécharge le modèle actuel sur Service-Public (annexe 1, location vide) au lieu de réutiliser l'ancien, car les baux signés à partir du 1er octobre 2026 utilisent la nouvelle version. Il met environ une heure à le remplir. (Illustration avec des noms inventés, pas un cas réel.)
 :::

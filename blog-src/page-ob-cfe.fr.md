@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : CGI art. 1447 et 1647 D (lien à ajouter)
+- Explication officielle : chercher « CFE (cotisation foncière des entreprises) pour la location meublée bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Le meublé de Théo entre dans sa deuxième année. En décembre, l'administration fiscale lui réclame quelques centaines d'euros de CFE ; il avait déposé le formulaire 1447-C avant le 31 décembre de sa première année. Il avait mis l'argent de côté, contrairement à un ami qui a été pris au dépourvu. (Illustration avec des noms inventés, pas un cas réel.)
 :::

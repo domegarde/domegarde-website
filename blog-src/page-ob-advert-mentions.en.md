@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 2-1 loi 89-462; arrêté 21 avril 2022; L126-33 CCH (link to add)
+- Official explanation: search « L'annonce comporte toutes les mentions obligatoires bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Before posting her advert, Claire runs through the list: rent excluding charges, charges, deposit, surface, the commune, both DPE letters with the estimated yearly cost, and the Géorisques sentence. She finds she forgot the reference rent for her rent-cap area and adds it. (Illustration with invented names, not a real case.)
 :::

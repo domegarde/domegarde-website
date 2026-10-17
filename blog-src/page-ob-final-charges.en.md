@@ -46,6 +46,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 23 loi 89-462 (link to add)
+- Official explanation: search « Charges de fin de bail soldées bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -54,4 +58,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: With the deposit, Nicole sends the last reconciliation of charges against provisions and a copy of the exit inventory. She owes no certificate. The account is settled and the tenant has no reason to go to conciliation. (Illustration with invented names, not a real case.)
 :::

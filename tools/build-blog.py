@@ -46,7 +46,7 @@ T = {
         datefmt=lambda d, m: f"{d.day} {m[d.month-1]} {d.year}",
         index="index.html", get_started="get-started.html", pricing="pricing.html", lang_label="EN",
         updated="Last updated", home_crumb="Home",
-        ph_label="Placeholder", ph_what="What goes here", ph_suggest="Suggestion", ph_needs="Needed from",
+        ph_label="Placeholder", ph_what="What goes here", ph_suggest="Suggestion", ph_needs="Needed from", ph_example="Example (invented, replace it)", ph_view_final="View as a finished page, examples shown as text", ph_view_guide="Show the guidance again",
         page_draft_text="This page is a draft scaffold for the founders to review. Each dashed box marks where content goes, says what belongs there and suggests what to write. Nothing here is final. To check before it goes out:",
         ph_count="{n} placeholder(s) to fill in on this page.",
         internal_note="Internal page: not linked from the site and not in the sitemap.",
@@ -65,7 +65,7 @@ T = {
         datefmt=lambda d, m: ("1er" if d.day == 1 else str(d.day)) + f" {m[d.month-1]} {d.year}",
         index="index-fr.html", get_started="get-started-fr.html", pricing="pricing-fr.html", lang_label="FR",
         updated="Dernière mise à jour", home_crumb="Accueil",
-        ph_label="Espace à remplir", ph_what="Ce qui va ici", ph_suggest="Suggestion", ph_needs="À fournir",
+        ph_label="Espace à remplir", ph_what="Ce qui va ici", ph_suggest="Suggestion", ph_needs="À fournir", ph_example="Exemple (inventé, à remplacer)", ph_view_final="Voir comme une page terminée, exemples affichés comme texte", ph_view_guide="Réafficher les consignes",
         page_draft_text="Cette page est une ébauche à relire par les fondateurs. Chaque encadré en pointillés marque l'endroit où le contenu viendra, dit ce qui doit y figurer et suggère quoi écrire. Rien n'est définitif. À vérifier avant publication :",
         ph_count="{n} espace(s) à remplir sur cette page.",
         internal_note="Page interne : sans lien depuis le site et absente du plan du site.",
@@ -140,8 +140,8 @@ def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:60]
 
 PH = [0]   # placeholder counter, reset at the start of every page
-PH_FIELD = re.compile(r"^(What goes here|Ce qui va ici|Suggestion|Needs|À fournir)\s*:\s*(.*)$")
-PH_LABEL = {"What goes here": "ph_what", "Ce qui va ici": "ph_what", "Suggestion": "ph_suggest", "Needs": "ph_needs", "À fournir": "ph_needs"}
+PH_FIELD = re.compile(r"^(What goes here|Ce qui va ici|Suggestion|Needs|À fournir|Example|Exemple)\s*:\s*(.*)$")
+PH_LABEL = {"What goes here": "ph_what", "Ce qui va ici": "ph_what", "Suggestion": "ph_suggest", "Needs": "ph_needs", "À fournir": "ph_needs", "Example": "ph_example", "Exemple": "ph_example"}
 
 def placeholder(lines, lang):
     """:::placeholder Title / What goes here: ... / Suggestion: ... / Needs: ... / :::  -> a numbered dashed box."""
@@ -158,10 +158,12 @@ def placeholder(lines, lang):
             cur[1].append(l.strip())
     assert any(f[0] == "ph_what" for f in fields), f"placeholder {title!r}: needs a 'What goes here:' line"
     rows = []
+    fields.sort(key=lambda f: f[0] == "ph_example")   # the example always comes last
     for key, parts in fields:
         items = [x for x in parts if x.startswith("- ")]; text = [x for x in parts if not x.startswith("- ") and x]
         body = (f"<p>{inline(' '.join(text), lang)}</p>" if text else "") + (("<ul>" + "".join(f"<li>{inline(x[2:], lang)}</li>" for x in items) + "</ul>") if items else "")
-        rows.append(f'<div class="ph-row"><p class="ph-label">{t[key]}{NB if lang == "fr" else ""}:</p>{body}</div>')
+        cls = "ph-row ph-example" if key == "ph_example" else "ph-row ph-guide"
+        rows.append(f'<div class="{cls}"><p class="ph-label">{t[key]}{NB if lang == "fr" else ""}:</p>{body}</div>')
     return (f'<aside class="ph" id="ph-{n}" aria-label="{t["ph_label"]} {n}: {esc(title)}"><p class="ph-tag"><span>{t["ph_label"]} {n}</span> {inline(title, lang)}</p>' + "".join(rows) + "</aside>")
 
 def markdown(body, lang):
@@ -527,7 +529,8 @@ def render_page(key, p, lang, other):
 {cta(lang)}</main>
 
 '''
-    extra = "".join(f'<script src="{s}"></script>\n' for s in PAGES[key].get("scripts", []))
+    scripts = list(PAGES[key].get("scripts", [])) + (["/drafts.js"] if PH[0] > 0 else [])
+    extra = "".join(f'<script src="{s}"></script>\n' for s in scripts)
     page += footer(lang) + '\n\n<script src="/main.js"></script>\n' + extra + '</body>\n</html>\n'
     return page
 
@@ -623,6 +626,12 @@ def main():
             for lang in ("en", "fr"):
                 for req in ("stage", "tier", "order"): assert langs[lang].get(req) is not None, f"page-{key}.{lang}.md: front matter needs '{req}'"
                 assert int(langs[lang]["stage"]) in STAGES and langs[lang]["tier"] in TIERS, f"page-{key}.{lang}.md: bad stage or tier"
+    for key, langs in SRCS.items():   # a page with unfilled placeholders can never be published
+        for lang, m in langs.items():
+            assert m["status"] == "draft" or ":::placeholder" not in m["body"], f"page-{key}.{lang}.md is not a draft but still has :::placeholder blocks: fill or delete them, or put 'status: draft' back"
+    for (slug, date, by_lang) in posts:
+        for lang, m in by_lang.items():
+            assert m["status"] == "draft" or ":::placeholder" not in m["body"], f"post {slug}.{lang} is published but still has :::placeholder blocks"
     for key in PAGES:
         for lang, other in (("en", "fr"), ("fr", "en")):
             w(PAGES[key]["files"][lang], render_page(key, SRCS[key][lang], lang, other))

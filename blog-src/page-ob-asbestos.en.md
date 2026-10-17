@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: R1334-29-4 to -29-7 CSP — collective buildings permitted before 1 July 1997 (link to add)
+- Official explanation: search « Dossier amiante, parties privatives (DAPP) bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Nadia's building was permitted in 1975. Her syndic holds the building's DTA, and she assumes that covers her. It does not: the diagnostician checks the private parts of her flat, finds none, and she can show the tenant where the short file is kept. (Illustration with invented names, not a real case.)
 :::

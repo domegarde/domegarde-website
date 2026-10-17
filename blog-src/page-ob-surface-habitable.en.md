@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 3 and 3-1 loi 89-462; R156-1 CCH (link to add)
+- Official explanation: search « Surface habitable bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Julie measures her flat with a tape: floor area under at least 1.80 m of headroom, leaving out walls, stairs and the cellar. She gets slightly less than the figure in her old documents and writes the lower one in the lease, keeping a note of how she measured. (Illustration with invented names, not a real case.)
 :::

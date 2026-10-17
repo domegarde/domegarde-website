@@ -47,6 +47,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 3 loi 89-462; arrêté 29 mai 2015 modified 16 février 2023 (link to add)
+- Official explanation: search « Notice d'information bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -55,4 +59,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Romain downloads the current information leaflet, prints it and attaches it to the lease at signing. It takes two minutes. At the tacit renewal two years later he does not need to send it again. (Illustration with invented names, not a real case.)
 :::

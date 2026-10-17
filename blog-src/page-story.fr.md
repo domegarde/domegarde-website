@@ -22,6 +22,7 @@ Suggestion:
 - dire ce que cela a coûté, en euros ou en mois, si on le sait
 - nos premières notes suggèrent l'histoire d'un propriétaire britannique à Paris face aux règles françaises de la location : ne l'utiliser que si elle est vraie
 À fournir: Les fondateurs. Une personne l'écrit à la première personne, ou le groupe écrit « nous » : décider une fois.
+Exemple: C'était un mardi de mars quand le message est arrivé. Le locataire de [Prénom] à Montreuil faisait remarquer, poliment, que la révision annuelle du loyer aurait dû être demandée le printemps précédent. Il était trop tard : environ [montant] € par an, perdus, parce que personne n'avait dit qu'il y avait un délai d'un an. Domegarde existe pour que personne n'apprenne une règle de cette façon.
 :::
 
 ## Le problème que nous avons vu
@@ -35,6 +36,7 @@ Suggestion:
 - ces chiffres viennent de notre propre recherche et n'ont pas été vérifiés de façon indépendante : les vérifier à la source avant de les utiliser
 - si un chiffre ne peut pas être vérifié, ne pas le mettre : le paragraphe ci-dessus fonctionne sans lui
 À fournir: La personne qui vérifie la source (Claudia ou un fondateur).
+Exemple: Environ 3,9 millions de personnes en France louent un logement en tant que particuliers, et environ deux tiers d'entre elles ne possèdent qu'un seul bien (ANIL/ADIL 75, avril 2025). [Vérifier la source et la date avant de l'utiliser.]
 :::
 
 ## Ce que nous construisons
@@ -54,6 +56,7 @@ Suggestion:
 - la rendre précise et vérifiable (« nous vous préviendrons quand une règle change, avec la source ») et non générale (« nous nous soucions des propriétaires »)
 - éviter les superlatifs (« le meilleur », « le seul »)
 À fournir: Les fondateurs.
+Exemple: Nous vous préviendrons quand une règle qui concerne votre bien change, et nous vous montrerons notre source et le jour où nous l'avons vérifiée.
 :::
 
 ## Les personnes
@@ -67,6 +70,7 @@ Suggestion:
 - texte alternatif décrivant simplement la personne (« Prénom Nom, souriante, en extérieur »)
 - facultatif : un lien (LinkedIn ou site personnel)
 À fournir: Le fondateur, qui doit aussi consentir à la publication de la photo.
+Exemple: **[Prénom Nom]**, Fondateur, produit et opérations. [Prénom] a loué un appartement à Paris pendant [N] ans et a commencé la liste de contrôle après avoir manqué une échéance. Basé à Paris. [Lien]
 :::
 
 :::placeholder Fondateur 2
@@ -74,6 +78,7 @@ Ce qui va ici : les mêmes informations pour le deuxième fondateur. Supprimer c
 Suggestion:
 - garder la même structure et la même longueur que pour le Fondateur 1 pour que les fiches soient homogènes
 À fournir: Le deuxième fondateur.
+Exemple: **[Prénom Nom]**, Fondateur, [rôle : par exemple droit et conformité]. [Deux lignes : ce que cette personne faisait avant, et pourquoi les règles de la location en France comptent pour elle.] [Lien]
 :::
 
 :::placeholder Fondateur 3
@@ -81,6 +86,7 @@ Ce qui va ici : les mêmes informations pour le troisième fondateur. Supprimer 
 Suggestion:
 - si l'équipe grandit, ajouter des encadrés de la même façon ; ne pas citer de personnes qui ne font pas encore partie de l'équipe
 À fournir: Le troisième fondateur.
+Exemple: **[Prénom Nom]**, Fondateur, [rôle : par exemple conception et ingénierie]. [Deux lignes : ce que cette personne a construit avant, et ce dont elle est responsable chez Domegarde aujourd'hui.] [Lien]
 :::
 
 ## Où nous sommes, et comment nous joindre
@@ -92,4 +98,5 @@ Ce qui va ici : une ou deux phrases invitant le lecteur à nous écrire ou à es
 Suggestion:
 - renvoyer vers quelque chose d'utile et de gratuit, comme les [outils gratuits](outils.html), plutôt que vers une phrase commerciale
 À fournir: Les fondateurs.
+Exemple: Une question, ou une erreur à signaler ? Écrivez-nous par le formulaire de contact. Nous lisons chaque message, et nous corrigeons les erreurs au grand jour sur la page Nouveautés.
 :::

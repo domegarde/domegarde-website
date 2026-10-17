@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: CGI — revenus fonciers (2044) or BIC (2042-C-PRO); LFSS 2026 art. 12 (link to add)
+- Official explanation: search « Revenus locatifs de l'année déclarés bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: In May, Laure opens her return. Her unfurnished flat brought in €9,600 in rent, below €15,000, so she can use the micro-foncier regime with the 30% allowance. She notes that if she had a furnished flat it would be a different form (2042-C-PRO). (Illustration with invented names, not a real case.)
 :::

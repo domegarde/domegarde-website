@@ -47,6 +47,10 @@ Suggestion:
 - une page officielle qui l'explique en mots simples
 - la date à laquelle chaque lien a été lu
 À fournir: Un juriste ou Claudia : nos outils de recherche ne peuvent pas lire Légifrance.
+Exemple:
+- Légifrance : L1334-5 CSP — immeubles construits avant le 1er janvier 1949 (lien à ajouter)
+- Explication officielle : chercher « Constat de risque d'exposition au plomb (CREP) bailleur » sur service-public.gouv.fr ou anil.org (lien à ajouter)
+- Date de lecture : [à remplir]
 :::
 
 :::placeholder Un exemple concret
@@ -55,4 +59,5 @@ Suggestion:
 - partir d'une situation vécue par les fondateurs s'il y en a une
 - sinon utiliser un exemple neutre avec des prénoms inventés, en précisant que c'est une illustration
 À fournir: Les fondateurs.
+Exemple: Thomas hérite d'un appartement dans un immeuble de 1938. Lors de la visite des diagnostics, le constat de plomb révèle de la peinture au plomb dans l'entrée. Le rapport est valable six ans et il en remet une copie au locataire, qui sait ainsi ce qu'il ne faut pas poncer. (Illustration avec des noms inventés, pas un cas réel.)
 :::

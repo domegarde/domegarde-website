@@ -43,6 +43,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: art. 22 and 25-6 loi 89-462 (link to add)
+- Official explanation: search « Dépôt de garantie dans le plafond légal bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -51,4 +55,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Anaïs lets an unfurnished flat for €800 excluding charges. She asks for €800, one month's rent, not more. For her furnished studio at €600 she may ask for up to €1,200. (Illustration with invented names, not a real case.)
 :::

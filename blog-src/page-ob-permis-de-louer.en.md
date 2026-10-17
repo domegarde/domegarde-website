@@ -48,6 +48,10 @@ Suggestion:
 - one official page that explains it in plain words
 - the date each link was read
 Needs: A lawyer or Claudia: Légifrance cannot be read by our research tools.
+Example:
+- Légifrance: L634-1 and L635-1 CCH — where the commune has opted in (link to add)
+- Official explanation: search « Permis de louer bailleur » on service-public.gouv.fr or anil.org (link to add)
+- Date read: [to fill in]
 :::
 
 :::placeholder A real-life example
@@ -56,4 +60,5 @@ Suggestion:
 - start from a situation in the founders' own experience if there is one
 - otherwise use a neutral example with invented names, and say it is an illustration
 Needs: The founders.
+Example: Antoine buys a flat in a commune that has introduced the permis de louer. He files the authorisation form before signing the lease, waits a month, and silence counts as approval. He keeps the reference to put in the lease. (Illustration with invented names, not a real case.)
 :::

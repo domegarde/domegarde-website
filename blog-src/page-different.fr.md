@@ -28,6 +28,7 @@ Suggestion:
 - penser aux habitudes et aux données, pas aux fonctions : par exemple garder une source datée pour chaque règle, ou travailler dans les deux langues
 - la tester en se demandant « un concurrent pourrait-il dire la même chose demain ? » : si oui, la réécrire
 À fournir: Les fondateurs.
+Exemple: Chaque règle de Domegarde montre sa source et le jour de notre dernière vérification, en français et en anglais, et nous publions ce qui a changé sur une liste publique.
 :::
 
 ## Ce que Domegarde ne fait pas
@@ -48,6 +49,8 @@ Suggestion:
 - préciser si les prix incluent la TVA
 - si une formule comprend une fonction qui n'est pas encore en ligne (comme l'assistant IA), le dire dans la même phrase
 À fournir: Les fondateurs (décision), et Florence pour la rédaction de la page des tarifs.
+Exemple: Option A, sans offre gratuite : Domegarde coûte 35 € par mois pour trois biens au plus (349 € par an, TVA [incluse / non incluse]). Il n'y a pas d'offre gratuite. Si vous avez un seul logement et que vous n'avez besoin que d'un calcul de loyer ou d'un calendrier, nos outils gratuits suffisent.
+Option B, avec une offre gratuite (décision à prendre) : Domegarde est gratuit pour un bien, avec [préciser ce qui est inclus]. À partir de deux biens, il coûte [prix]. [Dire ce qu'ajoutent les formules payantes.]
 :::
 
 :::placeholder Pour qui Domegarde n'est pas fait
@@ -56,6 +59,10 @@ Suggestion:
 - par exemple les bailleurs qui veulent que leur loyer soit encaissé ou un gestionnaire locatif : Domegarde ne fait ni l'un ni l'autre
 - être clair là-dessus crée de la confiance et économise du temps de support
 À fournir: Les fondateurs.
+Exemple:
+- Vous voulez que votre loyer soit encaissé et versé : Domegarde ne détient jamais d'argent.
+- Vous voulez qu'un gestionnaire trouve des locataires et gère le bien : Domegarde ne fait ni l'un ni l'autre.
+- Vous louez des locaux commerciaux : nos contrôles concernent les logements loués en résidence principale.
 :::
 
 :::placeholder Les preuves que nous pourrons ajouter plus tard
@@ -64,4 +71,5 @@ Suggestion:
 - n'ajouter que ce qui est réel et daté, avec l'autorisation de citer
 - laisser cet encadré vide, puis le supprimer, d'ici là
 À fournir: Les fondateurs, une fois qu'il y aura des clients.
+Exemple: Depuis l'ouverture de l'accès anticipé en [mois], [nombre] bailleurs ont ajouté [nombre] biens. « [Courte citation d'un bailleur.] » [Prénom, ville, avec autorisation.]
 :::
